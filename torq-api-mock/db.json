@@ -1,0 +1,1901 @@
+{
+  "Precificacao": [
+    {
+      "id": "1",
+      "nome": "Custo Direto",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo de Materiais (BOM)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Adicionais de Fábrica"
+        },
+        {
+          "id": 3,
+          "nome": "Custo de Fábrica",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Serviços e Logística",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Montagem/Instalação"
+        },
+        {
+          "id": 2,
+          "nome": "Frete"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Custo Total",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo Total (Custo Direto + Serviços e Logística)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Custo de Vendas (SG&A)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Margem de Contribuição",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Preço de venda",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Preço Líquido",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Impostos de Materiais",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Impostos de Serviços",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 4,
+          "nome": "Preço Bruto",
+          "atributoSistemico": "true"
+        }
+      ]
+    }
+  ],
+  "estrutura": [
+    {
+      "id": "1",
+      "nome": "Estrutura",
+      "filhos": [
+        {
+          "id": "1-1",
+          "nome": "Carroceria",
+          "filhos": [
+            {
+              "id": "1-1-1",
+              "nome": "Paineis",
+              "filhos": []
+            },
+            {
+              "id": "1-1-2",
+              "nome": "Monobloco",
+              "filhos": []
+            },
+            {
+              "id": "1-1-3",
+              "nome": "Coluna",
+              "filhos": []
+            },
+            {
+              "id": "1-1-4",
+              "nome": "Teto",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "nome": "Chassi",
+          "filhos": [
+            {
+              "id": "1-2-1",
+              "nome": "Quadro",
+              "filhos": []
+            },
+            {
+              "id": "1-2-2",
+              "nome": "Pontos de Ancoragem",
+              "filhos": []
+            },
+            {
+              "id": "1-2-3",
+              "nome": "Elementos de Rigidez Estrutural",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "1-3",
+          "nome": "Acabamentos Externos",
+          "filhos": [
+            {
+              "id": "1-3-1",
+              "nome": "Para-choque",
+              "filhos": []
+            },
+            {
+              "id": "1-3-2",
+              "nome": "Grades",
+              "filhos": []
+            },
+            {
+              "id": "1-3-3",
+              "nome": "Frisos",
+              "filhos": []
+            },
+            {
+              "id": "1-3-4",
+              "nome": "Vidros",
+              "filhos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Trem de Força",
+      "filhos": [
+        {
+          "id": "2-1",
+          "nome": "Motorização",
+          "filhos": [
+            {
+              "id": "2-1-1",
+              "nome": "Bloco",
+              "filhos": []
+            },
+            {
+              "id": "2-1-2",
+              "nome": "Cabeçote",
+              "filhos": []
+            },
+            {
+              "id": "2-1-3",
+              "nome": "Sistema de Injeção",
+              "filhos": []
+            },
+            {
+              "id": "2-1-4",
+              "nome": "Ignição",
+              "filhos": []
+            },
+            {
+              "id": "2-1-5",
+              "nome": "Sistema de Arrefecimento",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "nome": "Transmissão",
+          "filhos": [
+            {
+              "id": "2-2-1",
+              "nome": "Caixa de Câmbio",
+              "filhos": []
+            },
+            {
+              "id": "2-2-2",
+              "nome": "Embreagem",
+              "filhos": []
+            },
+            {
+              "id": "2-2-3",
+              "nome": "Diferenciais",
+              "filhos": []
+            },
+            {
+              "id": "2-2-4",
+              "nome": "Eixo de Tração",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "2-3",
+          "nome": "Exaustão",
+          "filhos": [
+            {
+              "id": "2-3-1",
+              "nome": "Catalizadores",
+              "filhos": []
+            },
+            {
+              "id": "2-3-2",
+              "nome": "Sensores de Oxigenio",
+              "filhos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Sistemas Dinâmicos",
+      "filhos": [
+        {
+          "id": "3-1",
+          "nome": "Suspensão",
+          "filhos": [
+            {
+              "id": "3-1-1",
+              "nome": "Amortecedores",
+              "filhos": []
+            },
+            {
+              "id": "3-1-2",
+              "nome": "Molas",
+              "filhos": []
+            },
+            {
+              "id": "3-1-3",
+              "nome": "Barras Estabilizadoras",
+              "filhos": []
+            },
+            {
+              "id": "3-1-4",
+              "nome": "Braços Oscilantes",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "nome": "Direção",
+          "filhos": [
+            {
+              "id": "3-2-1",
+              "nome": "Caixa de Direção",
+              "filhos": []
+            },
+            {
+              "id": "3-2-2",
+              "nome": "Coluna",
+              "filhos": []
+            },
+            {
+              "id": "3-2-3",
+              "nome": "Terminais",
+              "filhos": []
+            },
+            {
+              "id": "3-2-4",
+              "nome": "Sistema de Assitência",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "3-3",
+          "nome": "Freios",
+          "filhos": [
+            {
+              "id": "3-3-1",
+              "nome": "Discos",
+              "filhos": []
+            },
+            {
+              "id": "3-3-2",
+              "nome": "Tambores",
+              "filhos": []
+            },
+            {
+              "id": "3-3-3",
+              "nome": "Pinças",
+              "filhos": []
+            },
+            {
+              "id": "3-3-4",
+              "nome": "Pastilhas",
+              "filhos": []
+            },
+            {
+              "id": "3-3-5",
+              "nome": "Unidade de Controle",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "3-4",
+          "nome": "Rodas e Pneus",
+          "filhos": [
+            {
+              "id": "3-4-1",
+              "nome": "Conjunto de Rodagem",
+              "filhos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Sistemas Elétrico e Eletrônico",
+      "filhos": [
+        {
+          "id": "4-1",
+          "nome": "Gerenciamento de Energia",
+          "filhos": [
+            {
+              "id": "4-1-1",
+              "nome": "Discos",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "4-2",
+          "nome": "Arquitetura Eletrônica",
+          "filhos": [
+            {
+              "id": "4-2-1",
+              "nome": "Chicotes Elétricos",
+              "filhos": []
+            },
+            {
+              "id": "4-2-2",
+              "nome": "Módulos de Controle",
+              "filhos": []
+            },
+            {
+              "id": "4-2-3",
+              "nome": "Sensores",
+              "filhos": []
+            },
+            {
+              "id": "4-2-4",
+              "nome": "Atuadores",
+              "filhos": []
+            }
+          ]
+        },
+        {
+          "id": "4-3",
+          "nome": "Infotainment e Conforto",
+          "filhos": [
+            {
+              "id": "4-3-1",
+              "nome": "Painel de Instrumentos",
+              "filhos": []
+            },
+            {
+              "id": "4-3-2",
+              "nome": "Sistema Multimídia",
+              "filhos": []
+            },
+            {
+              "id": "4-3-3",
+              "nome": "Iluminação",
+              "filhos": []
+            },
+            {
+              "id": "4-3-4",
+              "nome": "Comandos Internos",
+              "filhos": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tabelas": [
+    {
+      "id": "1",
+      "nome": "Clientes",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": "1",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Nome",
+          "tipoDado": "2",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "CNPJ",
+          "tipoDado": "2",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 4,
+          "nome": "Cidade",
+          "tipoDado": "2",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 5,
+          "nome": "Produtor rural",
+          "tipoDado": "3",
+          "atributoSistemico": "false"
+        },
+        {
+          "id": 6,
+          "nome": "Cliente Fiel",
+          "tipoDado": 3,
+          "atributoSistemico": false
+        }
+      ],
+      "registros": [
+        {
+          "id": 1,
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": 1,
+          "coluna": 2,
+          "valor": "José"
+        },
+        {
+          "id": 1,
+          "coluna": 3,
+          "valor": "11.386.891/0001-82"
+        },
+        {
+          "id": 1,
+          "coluna": 4,
+          "valor": "Torres"
+        },
+        {
+          "id": 1,
+          "coluna": 5,
+          "valor": "false"
+        },
+        {
+          "id": 2,
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": 2,
+          "coluna": 2,
+          "valor": "João"
+        },
+        {
+          "id": 2,
+          "coluna": 3,
+          "valor": "12.386.891/0001-82"
+        },
+        {
+          "id": 2,
+          "coluna": 4,
+          "valor": "Capão"
+        },
+        {
+          "id": 2,
+          "coluna": 5,
+          "valor": "false"
+        },
+        {
+          "id": 1,
+          "coluna": 6,
+          "valor": "true"
+        },
+        {
+          "id": 3,
+          "coluna": 1,
+          "valor": "3"
+        },
+        {
+          "id": 3,
+          "coluna": 2,
+          "valor": "Pedro"
+        },
+        {
+          "id": 3,
+          "coluna": 3,
+          "valor": "32423424242432"
+        },
+        {
+          "id": 3,
+          "coluna": 4,
+          "valor": "Cidreira"
+        },
+        {
+          "id": 3,
+          "coluna": 5,
+          "valor": "true"
+        },
+        {
+          "id": 2,
+          "coluna": 6,
+          "valor": "false"
+        },
+        {
+          "id": 3,
+          "coluna": 6,
+          "valor": "true"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "servicos",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "codigo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Seguro Completo"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "aplicavél a todos automóveis"
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "12313"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Entrega a domicilio"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "entrega o produto a um preço"
+        },
+        {
+          "id": "2",
+          "coluna": 4,
+          "valor": "3442424"
+        },
+        {
+          "id": "uIsJwc99lRk",
+          "coluna": 2,
+          "valor": "Garantia Estendida"
+        },
+        {
+          "id": "uIsJwc99lRk",
+          "coluna": 3,
+          "valor": "escolher pacote de acordo com modelo"
+        },
+        {
+          "id": "uIsJwc99lRk",
+          "coluna": 4,
+          "valor": "24424234"
+        },
+        {
+          "id": "uIsJwc99lRk",
+          "coluna": 1,
+          "valor": "3"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "produtos",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "tipo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "codigoInterno",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "servicosAplicados",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Carro"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "MTS"
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "Carro configuravel para clientes vip"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 6,
+          "valor": "[\"1\", \"2\"]"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Caminhao"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "MTS"
+        },
+        {
+          "id": "2",
+          "coluna": 4,
+          "valor": "Caminhao truck sem caçamba"
+        },
+        {
+          "id": "2",
+          "coluna": 5,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 6,
+          "valor": "[]"
+        },
+        {
+          "id": "3",
+          "coluna": 1,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 2,
+          "valor": "Trator"
+        },
+        {
+          "id": "3",
+          "coluna": 3,
+          "valor": "MTS"
+        },
+        {
+          "id": "3",
+          "coluna": 4,
+          "valor": "Trator agricola"
+        },
+        {
+          "id": "3",
+          "coluna": 5,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 6,
+          "valor": "[\"2\"]"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "favoritos",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Contatos CPQ"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Financeiro"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "materiais",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "codigo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "unidadeDeMedida",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "produtosAplicaveis",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "LeadTime",
+          "tipoDado": 2,
+          "atributoSistemico": false
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Plataforma evo88"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "PLAT-MLB88"
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "Plataforma dos chassis"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "1",
+          "coluna": 6,
+          "valor": "[1]"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Plataforma popular x"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "PLAT-XYZ123"
+        },
+        {
+          "id": "2",
+          "coluna": 4,
+          "valor": "Plataforma dos chassis"
+        },
+        {
+          "id": "2",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "2",
+          "coluna": 6,
+          "valor": "[1]"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 2,
+          "valor": "Chapas de Inox GT9"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 3,
+          "valor": "MAT-XS87YH5"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 4,
+          "valor": "Chapas de aço inox em m2"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 1,
+          "valor": "22"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 6,
+          "valor": "[1, 2]"
+        },
+        {
+          "id": "1",
+          "coluna": 7,
+          "valor": "23"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "regrasComerciais",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "Linha"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "Modelo"
+        },
+        {
+          "id": "3",
+          "coluna": 1,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 2,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 3,
+          "valor": "Motorização"
+        },
+        {
+          "id": "4",
+          "coluna": 1,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 2,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 3,
+          "valor": "Cor"
+        },
+        {
+          "id": "5",
+          "coluna": 1,
+          "valor": "5"
+        },
+        {
+          "id": "5",
+          "coluna": 2,
+          "valor": "5"
+        },
+        {
+          "id": "5",
+          "coluna": 3,
+          "valor": "Teto solar"
+        },
+        {
+          "id": "6",
+          "coluna": 1,
+          "valor": "6"
+        },
+        {
+          "id": "6",
+          "coluna": 2,
+          "valor": "6"
+        },
+        {
+          "id": "6",
+          "coluna": 3,
+          "valor": "Rodas aro 16"
+        },
+        {
+          "id": "7",
+          "coluna": 1,
+          "valor": "7"
+        },
+        {
+          "id": "7",
+          "coluna": 2,
+          "valor": "7"
+        },
+        {
+          "id": "7",
+          "coluna": 3,
+          "valor": "Rodas aro 18"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "regrasTecnicas",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "5"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "Diâmetro do disco de freio"
+        },
+        {
+          "id": "msGZrH0ug9w",
+          "coluna": 3,
+          "valor": "Profundidade Barra Axial"
+        },
+        {
+          "id": "msGZrH0ug9w",
+          "coluna": 2,
+          "valor": "023375"
+        },
+        {
+          "id": "msGZrH0ug9w",
+          "coluna": 1,
+          "valor": "msGZrH0ug9w"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "nome": "CaracteristicasComerciais",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "tipo_codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "tipo_nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "familia_codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "familia_nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 8,
+          "nome": "opcaoLayout",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 9,
+          "nome": "valores",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "Plataforma"
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "6"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "Tabela"
+        },
+        {
+          "id": "1",
+          "coluna": 6,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 7,
+          "valor": "Geral"
+        },
+        {
+          "id": "1",
+          "coluna": 8,
+          "valor": "3"
+        },
+        {
+          "id": "1",
+          "coluna": 9,
+          "valor": "[{\"codigo\": 1, \"valor\": \"Pickup\", \"imagem\": \"https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png\"}, {\"codigo\": 2, \"valor\": \"SUV\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75\"}, {\"codigo\": 3, \"valor\": \"Sedan\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75\"}, {\"codigo\": 4, \"valor\": \"Sport\", \"imagem\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10\"}]"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "Linha"
+        },
+        {
+          "id": "2",
+          "coluna": 4,
+          "valor": "6"
+        },
+        {
+          "id": "2",
+          "coluna": 5,
+          "valor": "Tabela"
+        },
+        {
+          "id": "2",
+          "coluna": 6,
+          "valor": "1"
+        },
+        {
+          "id": "2",
+          "coluna": 7,
+          "valor": "Geral"
+        },
+        {
+          "id": "2",
+          "coluna": 8,
+          "valor": "3"
+        },
+        {
+          "id": "2",
+          "coluna": 9,
+          "valor": "[{\"codigo\": 1, \"valor\": \"S-10\"}, {\"codigo\": 2, \"valor\": \"TrailBlazer\"}, {\"codigo\": 3, \"valor\": \"Tracker\"}, {\"codigo\": 4, \"valor\": \"Equinox\"}, {\"codigo\": 5, \"valor\": \"Onix\"}, {\"codigo\": 6, \"valor\": \"Prisma\"}, {\"codigo\": 7, \"valor\": \"Cruze\"}, {\"codigo\": 8, \"valor\": \"Camaro\"}]"
+        },
+        {
+          "id": "3",
+          "coluna": 1,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 2,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 3,
+          "valor": "Modelo"
+        },
+        {
+          "id": "3",
+          "coluna": 4,
+          "valor": "6"
+        },
+        {
+          "id": "3",
+          "coluna": 5,
+          "valor": "Tabela"
+        },
+        {
+          "id": "3",
+          "coluna": 6,
+          "valor": "1"
+        },
+        {
+          "id": "3",
+          "coluna": 7,
+          "valor": "Geral"
+        },
+        {
+          "id": "3",
+          "coluna": 8,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 9,
+          "valor": "[{\"codigo\": 1, \"valor\": \"High Country\"}, {\"codigo\": 2, \"valor\": \"LTZ\"}, {\"codigo\": 3, \"valor\": \"LT\"}, {\"codigo\": 4, \"valor\": \"Plus\"}, {\"codigo\": 5, \"valor\": \"Sport\"}, {\"codigo\": 6, \"valor\": \"SS\"}, {\"codigo\": 7, \"valor\": \"ZL1\"}]"
+        },
+        {
+          "id": "4",
+          "coluna": 1,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 2,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 3,
+          "valor": "Motorização"
+        },
+        {
+          "id": "4",
+          "coluna": 4,
+          "valor": "6"
+        },
+        {
+          "id": "4",
+          "coluna": 5,
+          "valor": "Tabela"
+        },
+        {
+          "id": "4",
+          "coluna": 6,
+          "valor": "2"
+        },
+        {
+          "id": "4",
+          "coluna": 7,
+          "valor": "Motorização"
+        },
+        {
+          "id": "4",
+          "coluna": 8,
+          "valor": "1"
+        },
+        {
+          "id": "4",
+          "coluna": 9,
+          "valor": "[{\"codigo\": 1, \"valor\": \"1.0 Flex\"}, {\"codigo\": 2, \"valor\": \"1.4 Flex\"}, {\"codigo\": 3, \"valor\": \"2.0 Turbo Gasolina\"}, {\"codigo\": 4, \"valor\": \"2.8 Turbo Diesel\"}, {\"codigo\": 5, \"valor\": \"6.2 V8 Gasolina\"}]"
+        },
+        {
+          "id": "5",
+          "coluna": 1,
+          "valor": "5"
+        },
+        {
+          "id": "5",
+          "coluna": 2,
+          "valor": "5"
+        },
+        {
+          "id": "5",
+          "coluna": 3,
+          "valor": "Cor"
+        },
+        {
+          "id": "5",
+          "coluna": 4,
+          "valor": "6"
+        },
+        {
+          "id": "5",
+          "coluna": 5,
+          "valor": "Tabela"
+        },
+        {
+          "id": "5",
+          "coluna": 6,
+          "valor": "3"
+        },
+        {
+          "id": "5",
+          "coluna": 7,
+          "valor": "Acabamento"
+        },
+        {
+          "id": "5",
+          "coluna": 8,
+          "valor": "2"
+        },
+        {
+          "id": "5",
+          "coluna": 9,
+          "valor": "[{\"codigo\": 1, \"valor\": \"Branco\"}, {\"codigo\": 2, \"valor\": \"Preto\"}, {\"codigo\": 3, \"valor\": \"Prata\"}, {\"codigo\": 4, \"valor\": \"Vermelho\"}]"
+        },
+        {
+          "id": "6",
+          "coluna": 1,
+          "valor": "6"
+        },
+        {
+          "id": "6",
+          "coluna": 2,
+          "valor": "6"
+        },
+        {
+          "id": "6",
+          "coluna": 3,
+          "valor": "Teto solar"
+        },
+        {
+          "id": "6",
+          "coluna": 4,
+          "valor": "3"
+        },
+        {
+          "id": "6",
+          "coluna": 5,
+          "valor": "Lógico"
+        },
+        {
+          "id": "6",
+          "coluna": 6,
+          "valor": "4"
+        },
+        {
+          "id": "6",
+          "coluna": 7,
+          "valor": "Opcionais"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "CaracteristicasTecnicas",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "tipo_codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "tipo_nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "familia_codigo",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "familia_nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "9"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "Diâmetro do disco de freio"
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "3"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "Número decimal"
+        },
+        {
+          "id": "1",
+          "coluna": 6,
+          "valor": "5"
+        },
+        {
+          "id": "1",
+          "coluna": 7,
+          "valor": "Especificação"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 3,
+          "valor": "Profundidade Barra Axial 43"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 4,
+          "valor": "0"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 5,
+          "valor": "Numero decimal"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 6,
+          "valor": "0"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 7,
+          "valor": "Detalhe Técnico"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 1,
+          "valor": "6"
+        },
+        {
+          "id": "WPaMlh2vu5A",
+          "coluna": 2,
+          "valor": "67"
+        }
+      ]
+    }
+  ],
+  "CaracteristicasComerciaisLayout": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Plataforma",
+      "tipo": {
+        "codigo": 6,
+        "nome": "Tabela"
+      },
+      "familia": {
+        "codigo": 1,
+        "nome": "Geral"
+      },
+      "opcaoLayout": 3,
+      "valores": [
+        {
+          "codigo": 1,
+          "valor": "Pickup",
+          "imagem": "https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png"
+        },
+        {
+          "codigo": 2,
+          "valor": "SUV",
+          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75"
+        },
+        {
+          "codigo": 3,
+          "valor": "Sedan",
+          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75"
+        },
+        {
+          "codigo": 4,
+          "valor": "Sport",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Linha",
+      "tipo": {
+        "codigo": 6,
+        "nome": "Tabela"
+      },
+      "familia": {
+        "codigo": 1,
+        "nome": "Geral"
+      },
+      "opcaoLayout": 1,
+      "valores": [
+        {
+          "codigo": 1,
+          "valor": "S-10"
+        },
+        {
+          "codigo": 2,
+          "valor": "TrailBlazer"
+        },
+        {
+          "codigo": 3,
+          "valor": "Tracker"
+        },
+        {
+          "codigo": 4,
+          "valor": "Equinox"
+        },
+        {
+          "codigo": 5,
+          "valor": "Onix"
+        },
+        {
+          "codigo": 6,
+          "valor": "Prisma"
+        },
+        {
+          "codigo": 7,
+          "valor": "Cruze"
+        },
+        {
+          "codigo": 8,
+          "valor": "Camaro"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Modelo",
+      "tipo": {
+        "codigo": 6,
+        "nome": "Tabela"
+      },
+      "familia": {
+        "codigo": 1,
+        "nome": "Geral"
+      },
+      "opcaoLayout": 2,
+      "valores": [
+        {
+          "codigo": 1,
+          "valor": "High Country"
+        },
+        {
+          "codigo": 2,
+          "valor": "LTZ"
+        },
+        {
+          "codigo": 3,
+          "valor": "LT"
+        },
+        {
+          "codigo": 4,
+          "valor": "Plus"
+        },
+        {
+          "codigo": 5,
+          "valor": "Sport"
+        },
+        {
+          "codigo": 6,
+          "valor": "SS"
+        },
+        {
+          "codigo": 7,
+          "valor": "ZL1"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Motorização",
+      "tipo": {
+        "codigo": 6,
+        "nome": "Tabela"
+      },
+      "familia": {
+        "codigo": 2,
+        "nome": "Motorização"
+      },
+      "opcaoLayout": 2,
+      "valores": [
+        {
+          "codigo": 1,
+          "valor": "1.0 Flex"
+        },
+        {
+          "codigo": 2,
+          "valor": "1.4 Flex"
+        },
+        {
+          "codigo": 3,
+          "valor": "2.0 Turbo Gasolina"
+        },
+        {
+          "codigo": 4,
+          "valor": "2.8 Turbo Diesel"
+        },
+        {
+          "codigo": 5,
+          "valor": "6.2 V8 Gasolina"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "codigo": 5,
+      "nome": "Cor",
+      "tipo": {
+        "codigo": 6,
+        "nome": "Tabela"
+      },
+      "familia": {
+        "codigo": 3,
+        "nome": "Acabamento"
+      },
+      "opcaoLayout": 2,
+      "valores": [
+        {
+          "codigo": 1,
+          "valor": "Branco"
+        },
+        {
+          "codigo": 2,
+          "valor": "Preto"
+        },
+        {
+          "codigo": 3,
+          "valor": "Prata"
+        },
+        {
+          "codigo": 4,
+          "valor": "Vermelho"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "codigo": 6,
+      "nome": "Teto solar",
+      "tipo": {
+        "codigo": 3,
+        "nome": "Lógico"
+      },
+      "familia": {
+        "codigo": 4,
+        "nome": "Opcionais"
+      }
+    }
+  ],
+  "Cotacao": [
+    {
+      "icone": "mdi:home",
+      "entidades": [
+        {
+          "id": 1,
+          "nome": "Nova entidade",
+          "icone": "mdi:settings",
+          "produtos": [
+            {
+              "id": 1,
+              "nome": "Meus produtos",
+              "icone": "mdi:bell"
+            }
+          ],
+          "servicos": [
+            {
+              "id": 1,
+              "nome": "Meus serviços",
+              "icone": "mdi:account"
+            }
+          ]
+        }
+      ],
+      "produtos": [
+        {
+          "id": 1,
+          "nome": "Meus produtos",
+          "icone": "mdi:bell"
+        }
+      ],
+      "servicos": [
+        {
+          "id": 1,
+          "nome": "Meus serviços",
+          "icone": "mdi:account"
+        }
+      ],
+      "id": "soS9NjIy1Lc"
+    }
+  ],
+  "AtributosCotacaoFamilia": [
+    {
+      "nome": "Geral",
+      "id": "1",
+      "sistemico": true,
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "TipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "TipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data",
+          "TipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Venda em garantia",
+          "TipoDado": 2,
+          "sistemico": false
+        }
+      ]
+    },
+    {
+      "nome": "Impostos",
+      "sistemico": false,
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "ICMS",
+          "TipoDado": 2,
+          "sistemico": false
+        },
+        {
+          "id": 2,
+          "nome": "IPTU",
+          "TipoDado": 2,
+          "sistemico": false
+        },
+        {
+          "id": 3,
+          "nome": "ISPS",
+          "TipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "id": "98KeiZYZuuI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
