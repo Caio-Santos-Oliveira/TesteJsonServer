@@ -3,6 +3,7 @@
     {
       "id": "1",
       "nome": "Custo Direto",
+      "entidade": "produto",
       "componentes": [
         {
           "id": 1,
@@ -23,6 +24,7 @@
     {
       "id": "2",
       "nome": "Serviços e Logística",
+      "entidade": "produto",
       "componentes": [
         {
           "id": 1,
@@ -37,6 +39,7 @@
     {
       "id": "3",
       "nome": "Custo Total",
+      "entidade": "produto",
       "componentes": [
         {
           "id": 1,
@@ -58,6 +61,7 @@
     {
       "id": "4",
       "nome": "Preço de venda",
+      "entidade": "produto",
       "componentes": [
         {
           "id": 1,
@@ -76,6 +80,238 @@
         },
         {
           "id": 4,
+          "nome": "Preço Bruto",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Custo Direto",
+      "entidade": "servico",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo de Mão de Obra",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Custo Operacional",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "Deslocamento e Suporte",
+      "entidade": "servico",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Deslocamento até o Cliente"
+        },
+        {
+          "id": 2,
+          "nome": "Suporte Pós-Serviço"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "nome": "Custo Total",
+      "entidade": "servico",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo Total (Custo Direto + Deslocamento e Suporte)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Custo de Vendas (SG&A)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Margem de Contribuição",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "nome": "Preço de venda",
+      "entidade": "servico",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Preço Líquido",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Impostos sobre Serviços",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Preço Bruto",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "Custo Direto",
+      "entidade": "servicoconfig",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo Base do Serviço",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Custo de Personalização (Parâmetros)"
+        },
+        {
+          "id": 3,
+          "nome": "Custo Operacional",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "nome": "Aprovação e Logística",
+      "entidade": "servicoconfig",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo de Aprovação Técnica"
+        },
+        {
+          "id": 2,
+          "nome": "Deslocamento/Entrega"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "nome": "Custo Total",
+      "entidade": "servicoconfig",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo Total (Custo Direto + Aprovação e Logística)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Custo de Vendas (SG&A)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Margem de Contribuição",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "nome": "Preço de venda",
+      "entidade": "servicoconfig",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Preço Líquido",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Impostos sobre Serviços",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Preço Bruto",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "nome": "Custo Direto",
+      "entidade": "material",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo de Aquisição",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Custo de Estoque",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "nome": "Logística de Fornecimento",
+      "entidade": "material",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Transporte até o Armazém"
+        },
+        {
+          "id": 2,
+          "nome": "Armazenagem"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "nome": "Custo Total",
+      "entidade": "material",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Custo Total (Custo Direto + Logística de Fornecimento)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Custo de Vendas (SG&A)",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
+          "nome": "Margem de Contribuição",
+          "atributoSistemico": "true"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "nome": "Preço de venda",
+      "entidade": "material",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Preço Líquido",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 2,
+          "nome": "Impostos de Materiais",
+          "atributoSistemico": "true"
+        },
+        {
+          "id": 3,
           "nome": "Preço Bruto",
           "atributoSistemico": "true"
         }
@@ -492,7 +728,7 @@
         {
           "id": 2,
           "coluna": 3,
-          "valor": "12.386.891/0001-82"
+          "valor": "12.486.441/0001-86"
         },
         {
           "id": 2,
@@ -543,6 +779,51 @@
           "id": 3,
           "coluna": 6,
           "valor": "true"
+        },
+        {
+          "id": 4,
+          "coluna": 1,
+          "valor": "4"
+        },
+        {
+          "id": 4,
+          "coluna": 2,
+          "valor": "Claudio"
+        },
+        {
+          "id": 4,
+          "coluna": 3,
+          "valor": "434535353535"
+        },
+        {
+          "id": 4,
+          "coluna": 4,
+          "valor": "Porto Alegre"
+        },
+        {
+          "id": 4,
+          "coluna": 5,
+          "valor": "true"
+        },
+        {
+          "id": 5,
+          "coluna": 2,
+          "valor": "Mathias"
+        },
+        {
+          "id": 5,
+          "coluna": 4,
+          "valor": "Belem"
+        },
+        {
+          "id": 6,
+          "coluna": 2,
+          "valor": "Sérgio Marcão"
+        },
+        {
+          "id": 6,
+          "coluna": 4,
+          "valor": "Criciuma"
         }
       ]
     },
@@ -640,6 +921,256 @@
     },
     {
       "id": "3",
+      "nome": "servicosConfiguraveis",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "codigo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "categoria",
+          "tipoDado": "2",
+          "atributoSistemico": false
+        },
+        {
+          "id": 7,
+          "nome": "tempoEstimado",
+          "tipoDado": "2",
+          "atributoSistemico": false
+        },
+        {
+          "id": 10,
+          "nome": "parametrosConfiguraveis",
+          "tipoDado": "2",
+          "atributoSistemico": false
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 1,
+          "valor": "1"
+        },
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Instalação de Sistema Fotovoltaico"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "Projeto personalizado conforme consumo energético do cliente."
+        },
+        {
+          "id": "1",
+          "coluna": 4,
+          "valor": "CFG-001"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "Energia"
+        },
+        {
+          "id": "1",
+          "coluna": 6,
+          "valor": "8500"
+        },
+        {
+          "id": "1",
+          "coluna": 7,
+          "valor": "15 dias"
+        },
+        {
+          "id": "1",
+          "coluna": 8,
+          "valor": "true"
+        },
+        {
+          "id": "1",
+          "coluna": 9,
+          "valor": "true"
+        },
+        {
+          "id": "1",
+          "coluna": 10,
+          "valor": "Potência;Quantidade de placas;Tipo de inversor;Cor da estrutura"
+        },
+        {
+          "id": "2",
+          "coluna": 1,
+          "valor": "2"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Desenvolvimento de Website"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "Criação de site sob medida para empresas."
+        },
+        {
+          "id": "2",
+          "coluna": 4,
+          "valor": "CFG-002"
+        },
+        {
+          "id": "2",
+          "coluna": 5,
+          "valor": "Tecnologia"
+        },
+        {
+          "id": "2",
+          "coluna": 6,
+          "valor": "4500"
+        },
+        {
+          "id": "2",
+          "coluna": 7,
+          "valor": "30 dias"
+        },
+        {
+          "id": "2",
+          "coluna": 8,
+          "valor": "true"
+        },
+        {
+          "id": "2",
+          "coluna": 9,
+          "valor": "true"
+        },
+        {
+          "id": "2",
+          "coluna": 10,
+          "valor": "Número de páginas;Paleta de cores;CMS;Integrações;Responsividade"
+        },
+        {
+          "id": "3",
+          "coluna": 1,
+          "valor": "3"
+        },
+        {
+          "id": "3",
+          "coluna": 2,
+          "valor": "Consultoria Empresarial"
+        },
+        {
+          "id": "3",
+          "coluna": 3,
+          "valor": "Consultoria personalizada conforme o segmento do cliente."
+        },
+        {
+          "id": "3",
+          "coluna": 4,
+          "valor": "CFG-003"
+        },
+        {
+          "id": "3",
+          "coluna": 5,
+          "valor": "Consultoria"
+        },
+        {
+          "id": "3",
+          "coluna": 6,
+          "valor": "2500"
+        },
+        {
+          "id": "3",
+          "coluna": 7,
+          "valor": "20 horas"
+        },
+        {
+          "id": "3",
+          "coluna": 8,
+          "valor": "true"
+        },
+        {
+          "id": "3",
+          "coluna": 9,
+          "valor": "false"
+        },
+        {
+          "id": "3",
+          "coluna": 10,
+          "valor": "Quantidade de horas;Área da consultoria;Modalidade presencial/remota"
+        },
+        {
+          "id": "4",
+          "coluna": 1,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 2,
+          "valor": "Projeto de Móveis Planejados"
+        },
+        {
+          "id": "4",
+          "coluna": 3,
+          "valor": "Projeto desenvolvido conforme medidas do ambiente."
+        },
+        {
+          "id": "4",
+          "coluna": 4,
+          "valor": "CFG-004"
+        },
+        {
+          "id": "4",
+          "coluna": 5,
+          "valor": "Arquitetura"
+        },
+        {
+          "id": "4",
+          "coluna": 6,
+          "valor": "12000"
+        },
+        {
+          "id": "4",
+          "coluna": 7,
+          "valor": "25 dias"
+        },
+        {
+          "id": "4",
+          "coluna": 8,
+          "valor": "true"
+        },
+        {
+          "id": "4",
+          "coluna": 9,
+          "valor": "true"
+        },
+        {
+          "id": "4",
+          "coluna": 10,
+          "valor": "Material;Cor;Acabamento;Quantidade de módulos;Ferragens"
+        }
+      ]
+    },
+    {
+      "id": "3",
       "nome": "produtos",
       "colunas": [
         {
@@ -708,7 +1239,7 @@
         {
           "id": "1",
           "coluna": 6,
-          "valor": "[\"1\", \"2\"]"
+          "valor": "[1,2,\"uIsJwc99lRk\"]"
         },
         {
           "id": "2",
@@ -769,6 +1300,173 @@
           "id": "3",
           "coluna": 6,
           "valor": "[\"2\"]"
+        },
+        {
+          "id": "4",
+          "coluna": 1,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 2,
+          "valor": "Moto"
+        },
+        {
+          "id": "4",
+          "coluna": 3,
+          "valor": "MTS"
+        },
+        {
+          "id": "4",
+          "coluna": 4,
+          "valor": "Moto configuravel para clientes vip"
+        },
+        {
+          "id": "4",
+          "coluna": 5,
+          "valor": "4"
+        },
+        {
+          "id": "4",
+          "coluna": 6,
+          "valor": "[]"
+        },
+        {
+          "id": 5,
+          "coluna": 1,
+          "valor": "5"
+        },
+        {
+          "id": 5,
+          "coluna": 2,
+          "valor": "Lancha"
+        },
+        {
+          "id": 5,
+          "coluna": 3,
+          "valor": "MTO"
+        },
+        {
+          "id": 5,
+          "coluna": 4,
+          "valor": "lancha personalizavel"
+        },
+        {
+          "id": 5,
+          "coluna": 5,
+          "valor": "34223424"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "custoHoraServicos",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "nomeServico",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "tipoServico",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "valorHora",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "4",
+          "coluna": 1,
+          "valor": "Instalação de Sistema Fotovoltaico"
+        },
+        {
+          "id": "4",
+          "coluna": 2,
+          "valor": "Energia Solar"
+        },
+        {
+          "id": "4",
+          "coluna": 3,
+          "valor": "120"
+        },
+        {
+          "id": "4",
+          "coluna": 4,
+          "valor": "Valor da hora técnica de projeto e instalação de sistemas fotovoltaicos"
+        },
+        {
+          "id": "5",
+          "coluna": 1,
+          "valor": "Desenvolvimento de Website"
+        },
+        {
+          "id": "5",
+          "coluna": 2,
+          "valor": "Desenvolvimento Web"
+        },
+        {
+          "id": "5",
+          "coluna": 3,
+          "valor": "95"
+        },
+        {
+          "id": "5",
+          "coluna": 4,
+          "valor": "Valor da hora de desenvolvimento e design de sites sob medida para empresas"
+        },
+        {
+          "id": "6",
+          "coluna": 1,
+          "valor": "Consultoria Empresarial"
+        },
+        {
+          "id": "6",
+          "coluna": 2,
+          "valor": "Consultoria de Negócios"
+        },
+        {
+          "id": "6",
+          "coluna": 3,
+          "valor": "180"
+        },
+        {
+          "id": "6",
+          "coluna": 4,
+          "valor": "Valor da hora de consultoria especializada conforme o segmento do cliente"
+        },
+        {
+          "id": "7",
+          "coluna": 1,
+          "valor": "Projeto de Móveis Planejados"
+        },
+        {
+          "id": "7",
+          "coluna": 2,
+          "valor": "Arquitetura e Design de Interiores"
+        },
+        {
+          "id": "7",
+          "coluna": 3,
+          "valor": "110"
+        },
+        {
+          "id": "7",
+          "coluna": 4,
+          "valor": "Valor da hora técnica para elaboração de projetos de móveis planejados sob medida"
         }
       ]
     },
@@ -888,7 +1586,7 @@
         {
           "id": "1",
           "coluna": 6,
-          "valor": "[1]"
+          "valor": "Carro"
         },
         {
           "id": "2",
@@ -918,7 +1616,7 @@
         {
           "id": "2",
           "coluna": 6,
-          "valor": "[1]"
+          "valor": "Carro"
         },
         {
           "id": "hgR5bF7F5hs",
@@ -943,17 +1641,277 @@
         {
           "id": "hgR5bF7F5hs",
           "coluna": 1,
-          "valor": "22"
+          "valor": "hgR5bF7F5hs"
         },
         {
           "id": "hgR5bF7F5hs",
           "coluna": 6,
-          "valor": "[1, 2]"
+          "valor": "Carro, Caminhao"
         },
         {
           "id": "1",
           "coluna": 7,
           "valor": "23"
+        },
+        {
+          "id": "2",
+          "coluna": 7,
+          "valor": "88"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 7,
+          "valor": "10"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "custoMateriais",
+      "colunas": [
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "codigo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "unidadeDeMedida",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 8,
+          "nome": "custo",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": "1",
+          "coluna": 2,
+          "valor": "Plataforma evo88"
+        },
+        {
+          "id": "1",
+          "coluna": 3,
+          "valor": "PLAT-MLB88"
+        },
+        {
+          "id": "1",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "1",
+          "coluna": 8,
+          "valor": "2010"
+        },
+        {
+          "id": "2",
+          "coluna": 2,
+          "valor": "Plataforma popular x"
+        },
+        {
+          "id": "2",
+          "coluna": 3,
+          "valor": "PLAT-XYZ123"
+        },
+        {
+          "id": "2",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "2",
+          "coluna": 8,
+          "valor": "550"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 2,
+          "valor": "Chapas de Inox GT9"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 3,
+          "valor": "MAT-XS87YH5"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 5,
+          "valor": "Unidade"
+        },
+        {
+          "id": "hgR5bF7F5hs",
+          "coluna": 8,
+          "valor": "1200"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "nome": "Oportunidades",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "clienteId",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "valor",
+          "tipoDado": "1",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "estagio",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": false
+        },
+        {
+          "id": 7,
+          "nome": "proximoFollowUp",
+          "tipoDado": "2",
+          "atributoSistemico": false
+        }
+      ],
+      "registros": [
+        {
+          "id": 1,
+          "coluna": 1,
+          "valor": "[1]"
+        },
+        {
+          "id": 1,
+          "coluna": 2,
+          "valor": "120000"
+        },
+        {
+          "id": 1,
+          "coluna": 3,
+          "valor": "3"
+        },
+        {
+          "id": 1,
+          "coluna": 5,
+          "valor": ""
+        },
+        {
+          "id": 2,
+          "coluna": 1,
+          "valor": "[5]"
+        },
+        {
+          "id": 2,
+          "coluna": 2,
+          "valor": "10000"
+        },
+        {
+          "id": 2,
+          "coluna": 3,
+          "valor": "1"
+        },
+        {
+          "id": 2,
+          "coluna": 5,
+          "valor": ""
+        },
+        {
+          "id": 3,
+          "coluna": 1,
+          "valor": "[4]"
+        },
+        {
+          "id": 3,
+          "coluna": 2,
+          "valor": "560500"
+        },
+        {
+          "id": 3,
+          "coluna": 3,
+          "valor": "1"
+        },
+        {
+          "id": 3,
+          "coluna": 5,
+          "valor": ""
+        },
+        {
+          "id": 4,
+          "coluna": 1,
+          "valor": "[2]"
+        },
+        {
+          "id": 4,
+          "coluna": 2,
+          "valor": "60000"
+        },
+        {
+          "id": 4,
+          "coluna": 3,
+          "valor": "3"
+        },
+        {
+          "id": 4,
+          "coluna": 5,
+          "valor": ""
+        },
+        {
+          "id": 5,
+          "coluna": 1,
+          "valor": "[3]"
+        },
+        {
+          "id": 5,
+          "coluna": 2,
+          "valor": "16700"
+        },
+        {
+          "id": 5,
+          "coluna": 3,
+          "valor": "2"
+        },
+        {
+          "id": 5,
+          "coluna": 5,
+          "valor": "Postou no facebook que se interessa em motos"
+        },
+        {
+          "id": 6,
+          "coluna": 1,
+          "valor": "[6]"
+        },
+        {
+          "id": 6,
+          "coluna": 2,
+          "valor": "150000"
+        },
+        {
+          "id": 6,
+          "coluna": 3,
+          "valor": "1"
+        },
+        {
+          "id": 6,
+          "coluna": 5,
+          "valor": "Sérgio possui muitos terrenos, recentemente comprou mais 1 carro (já possuia 2)"
         }
       ]
     },
@@ -1201,6 +2159,12 @@
           "nome": "valores",
           "tipoDado": "2",
           "atributoSistemico": true
+        },
+        {
+          "id": 10,
+          "nome": "produtosAplicaveis",
+          "tipoDado": "2",
+          "atributoSistemico": true
         }
       ],
       "registros": [
@@ -1247,7 +2211,12 @@
         {
           "id": "1",
           "coluna": 9,
-          "valor": "[{\"codigo\": 1, \"valor\": \"Pickup\", \"imagem\": \"https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png\"}, {\"codigo\": 2, \"valor\": \"SUV\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75\"}, {\"codigo\": 3, \"valor\": \"Sedan\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75\"}, {\"codigo\": 4, \"valor\": \"Sport\", \"imagem\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10\"}]"
+          "valor": "[{\"codigo\": 1, \"valor\": \"Pickup\", \"imagem\": \"https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 2, \"valor\": \"SUV\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 3, \"valor\": \"Sedan\", \"imagem\": \"https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 4, \"valor\": \"Sport\", \"imagem\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10\", \"produtosAplicaveis\": [\"1\"]}]"
+        },
+        {
+          "id": "1",
+          "coluna": 10,
+          "valor": "[]"
         },
         {
           "id": "2",
@@ -1292,7 +2261,12 @@
         {
           "id": "2",
           "coluna": 9,
-          "valor": "[{\"codigo\": 1, \"valor\": \"S-10\"}, {\"codigo\": 2, \"valor\": \"TrailBlazer\"}, {\"codigo\": 3, \"valor\": \"Tracker\"}, {\"codigo\": 4, \"valor\": \"Equinox\"}, {\"codigo\": 5, \"valor\": \"Onix\"}, {\"codigo\": 6, \"valor\": \"Prisma\"}, {\"codigo\": 7, \"valor\": \"Cruze\"}, {\"codigo\": 8, \"valor\": \"Camaro\"}]"
+          "valor": "[{\"codigo\": 1, \"valor\": \"S-10\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 2, \"valor\": \"TrailBlazer\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 3, \"valor\": \"Tracker\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 4, \"valor\": \"Equinox\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 5, \"valor\": \"Onix\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 6, \"valor\": \"Prisma\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 7, \"valor\": \"Cruze\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 8, \"valor\": \"Camaro\", \"produtosAplicaveis\": [\"1\"]}]"
+        },
+        {
+          "id": "2",
+          "coluna": 10,
+          "valor": "[]"
         },
         {
           "id": "3",
@@ -1337,7 +2311,12 @@
         {
           "id": "3",
           "coluna": 9,
-          "valor": "[{\"codigo\": 1, \"valor\": \"High Country\"}, {\"codigo\": 2, \"valor\": \"LTZ\"}, {\"codigo\": 3, \"valor\": \"LT\"}, {\"codigo\": 4, \"valor\": \"Plus\"}, {\"codigo\": 5, \"valor\": \"Sport\"}, {\"codigo\": 6, \"valor\": \"SS\"}, {\"codigo\": 7, \"valor\": \"ZL1\"}]"
+          "valor": "[{\"codigo\": 1, \"valor\": \"High Country\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 2, \"valor\": \"LTZ\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 3, \"valor\": \"LT\", \"produtosAplicaveis\": [\"1\", \"2\", \"3\"]}, {\"codigo\": 4, \"valor\": \"Plus\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 5, \"valor\": \"Sport\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 6, \"valor\": \"SS\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 7, \"valor\": \"ZL1\", \"produtosAplicaveis\": [\"1\"]}]"
+        },
+        {
+          "id": "3",
+          "coluna": 10,
+          "valor": "[]"
         },
         {
           "id": "4",
@@ -1382,7 +2361,12 @@
         {
           "id": "4",
           "coluna": 9,
-          "valor": "[{\"codigo\": 1, \"valor\": \"1.0 Flex\"}, {\"codigo\": 2, \"valor\": \"1.4 Flex\"}, {\"codigo\": 3, \"valor\": \"2.0 Turbo Gasolina\"}, {\"codigo\": 4, \"valor\": \"2.8 Turbo Diesel\"}, {\"codigo\": 5, \"valor\": \"6.2 V8 Gasolina\"}]"
+          "valor": "[{\"codigo\": 1, \"valor\": \"1.0 Flex\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 2, \"valor\": \"1.4 Flex\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 3, \"valor\": \"2.0 Turbo Gasolina\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 4, \"valor\": \"2.8 Turbo Diesel\", \"produtosAplicaveis\": [\"2\", \"3\"]}, {\"codigo\": 5, \"valor\": \"6.2 V8 Gasolina\", \"produtosAplicaveis\": [\"1\"]}]"
+        },
+        {
+          "id": "4",
+          "coluna": 10,
+          "valor": "[]"
         },
         {
           "id": "5",
@@ -1427,7 +2411,12 @@
         {
           "id": "5",
           "coluna": 9,
-          "valor": "[{\"codigo\": 1, \"valor\": \"Branco\"}, {\"codigo\": 2, \"valor\": \"Preto\"}, {\"codigo\": 3, \"valor\": \"Prata\"}, {\"codigo\": 4, \"valor\": \"Vermelho\"}]"
+          "valor": "[{\"codigo\": 1, \"valor\": \"Branco\", \"produtosAplicaveis\": [\"1\", \"2\", \"3\"]}, {\"codigo\": 2, \"valor\": \"Preto\", \"produtosAplicaveis\": [\"1\", \"2\", \"3\"]}, {\"codigo\": 3, \"valor\": \"Prata\", \"produtosAplicaveis\": [\"1\"]}, {\"codigo\": 4, \"valor\": \"Vermelho\", \"produtosAplicaveis\": [\"1\"]}]"
+        },
+        {
+          "id": "5",
+          "coluna": 10,
+          "valor": "[]"
         },
         {
           "id": "6",
@@ -1463,6 +2452,11 @@
           "id": "6",
           "coluna": 7,
           "valor": "Opcionais"
+        },
+        {
+          "id": "6",
+          "coluna": 10,
+          "valor": "[\"1\"]"
         }
       ]
     },
@@ -1605,22 +2599,154 @@
         {
           "codigo": 1,
           "valor": "Pickup",
-          "imagem": "https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png"
+          "imagem": "https://portalgoverno.com.br/wp-content/uploads/2026/03/Pick-upChevroletS10.png",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 2,
           "valor": "SUV",
-          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75"
+          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FoNB9hHTCapGR8YNAll1gVtXWio8yMg-metaVmFudGFnZW5zIGRlIHRlciB1bSBjYXJybyBTVVYgZGEgVm9sa3N3YWdlbi5qcGc%253D-.jpg&w=3840&q=75",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 3,
           "valor": "Sedan",
-          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75"
+          "imagem": "https://www.cnvw.com.br/_next/image?url=https%3A%2F%2Fcnvw-assets.nyc3.digitaloceanspaces.com%2Fpublic%2Fblog%2FEQD4tdyJTSZzmCLY3vnV3fbOLeUWis-metaTyBxdWUgw6kgY2Fycm8gc2VkYW5fLnBuZw%253D%253D-.png&w=3840&q=75",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 4,
           "valor": "Sport",
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10"
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUu-DCfeskQWCe3qNq0OTeknF9GAVSic-GLUOw-2KuQ&s=10",
+          "produtosAplicaveis": [
+            1
+          ]
+        },
+        {
+          "codigo": 5,
+          "valor": "Hatch",
+          "imagem": "",
+          "produtosAplicaveis": [
+            1
+          ]
+        },
+        {
+          "codigo": 6,
+          "valor": "Toco",
+          "imagem": "",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 7,
+          "valor": "Truck",
+          "imagem": "",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 8,
+          "valor": "Bitruck",
+          "imagem": "",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 9,
+          "valor": "Cavalo Mecânico",
+          "imagem": "",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 10,
+          "valor": "VUC",
+          "imagem": "",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 11,
+          "valor": "Compacto",
+          "imagem": "",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 12,
+          "valor": "Média Potência",
+          "imagem": "",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 13,
+          "valor": "Alta Potência",
+          "imagem": "",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 14,
+          "valor": "Articulado",
+          "imagem": "",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 15,
+          "valor": "Naked",
+          "imagem": "",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 16,
+          "valor": "Custom",
+          "imagem": "",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 17,
+          "valor": "Scrambler",
+          "imagem": "",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 18,
+          "valor": "Trail",
+          "imagem": "",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 19,
+          "valor": "Scooter",
+          "imagem": "",
+          "produtosAplicaveis": [
+            4
+          ]
         }
       ]
     },
@@ -1640,35 +2766,178 @@
       "valores": [
         {
           "codigo": 1,
-          "valor": "S-10"
+          "valor": "S-10",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 2,
-          "valor": "TrailBlazer"
+          "valor": "TrailBlazer",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 3,
-          "valor": "Tracker"
+          "valor": "Tracker",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 4,
-          "valor": "Equinox"
+          "valor": "Equinox",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 5,
-          "valor": "Onix"
+          "valor": "Onix",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 6,
-          "valor": "Prisma"
+          "valor": "Prisma",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 7,
-          "valor": "Cruze"
+          "valor": "Cruze",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 8,
-          "valor": "Camaro"
+          "valor": "Camaro",
+          "produtosAplicaveis": [
+            1
+          ]
+        },
+        {
+          "codigo": 9,
+          "valor": "Constellation",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 10,
+          "valor": "Actros",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 11,
+          "valor": "Atego",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 12,
+          "valor": "Accelo",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 13,
+          "valor": "Delivery",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 14,
+          "valor": "Meteor",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 15,
+          "valor": "5075E",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 16,
+          "valor": "6110J",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 17,
+          "valor": "MF 4707",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 18,
+          "valor": "Valtra A750",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 19,
+          "valor": "New Holland TL75",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 20,
+          "valor": "CG 160",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 21,
+          "valor": "Bros 160",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 22,
+          "valor": "XRE 300",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 23,
+          "valor": "CB 500",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 24,
+          "valor": "Fazer 250",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 25,
+          "valor": "MT-03",
+          "produtosAplicaveis": [
+            4
+          ]
         }
       ]
     },
@@ -1688,31 +2957,136 @@
       "valores": [
         {
           "codigo": 1,
-          "valor": "High Country"
+          "valor": "High Country",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 2,
-          "valor": "LTZ"
+          "valor": "LTZ",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 3,
-          "valor": "LT"
+          "valor": "LT",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 4,
-          "valor": "Plus"
+          "valor": "Plus",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 5,
-          "valor": "Sport"
+          "valor": "Sport",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 6,
-          "valor": "SS"
+          "valor": "SS",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 7,
-          "valor": "ZL1"
+          "valor": "ZL1",
+          "produtosAplicaveis": [
+            1
+          ]
+        },
+        {
+          "codigo": 8,
+          "valor": "Standard",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 9,
+          "valor": "Advantech",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 10,
+          "valor": "Powertronic",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 11,
+          "valor": "Extreme",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 12,
+          "valor": "Standard",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 13,
+          "valor": "Premium",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 14,
+          "valor": "PowerShift",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 15,
+          "valor": "Advanced",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 16,
+          "valor": "Standard",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 17,
+          "valor": "ESD",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 18,
+          "valor": "ESDD",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 19,
+          "valor": "ABS",
+          "produtosAplicaveis": [
+            4
+          ]
         }
       ]
     },
@@ -1728,27 +3102,112 @@
         "codigo": 2,
         "nome": "Motorização"
       },
-      "opcaoLayout": 2,
+      "opcaoLayout": 1,
       "valores": [
         {
           "codigo": 1,
-          "valor": "1.0 Flex"
+          "valor": "1.0 Flex",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 2,
-          "valor": "1.4 Flex"
+          "valor": "1.4 Flex",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 3,
-          "valor": "2.0 Turbo Gasolina"
+          "valor": "2.0 Turbo Gasolina",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 4,
-          "valor": "2.8 Turbo Diesel"
+          "valor": "6.2 V8 Gasolina",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 5,
-          "valor": "6.2 V8 Gasolina"
+          "valor": "2.8 Turbo Diesel",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 6,
+          "valor": "4-cilindros Diesel",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 7,
+          "valor": "6-cilindros Diesel",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 8,
+          "valor": "Motor D13 Diesel",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 9,
+          "valor": "3-cilindros Diesel",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 10,
+          "valor": "4-cilindros Diesel Turbo",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 11,
+          "valor": "6-cilindros Diesel Turbo",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 12,
+          "valor": "160cc Flex",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 13,
+          "valor": "250cc Monocilíndrico",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 14,
+          "valor": "300cc Flex",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 15,
+          "valor": "500cc Bicilíndrico",
+          "produtosAplicaveis": [
+            4
+          ]
         }
       ]
     },
@@ -1768,19 +3227,101 @@
       "valores": [
         {
           "codigo": 1,
-          "valor": "Branco"
+          "valor": "Branco",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 2,
-          "valor": "Preto"
+          "valor": "Preto",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 3,
-          "valor": "Prata"
+          "valor": "Prata",
+          "produtosAplicaveis": [
+            1
+          ]
         },
         {
           "codigo": 4,
-          "valor": "Vermelho"
+          "valor": "Vermelho",
+          "produtosAplicaveis": [
+            1
+          ]
+        },
+        {
+          "codigo": 5,
+          "valor": "Branco",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 6,
+          "valor": "Azul",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 7,
+          "valor": "Vermelho",
+          "produtosAplicaveis": [
+            2
+          ]
+        },
+        {
+          "codigo": 8,
+          "valor": "Verde",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 9,
+          "valor": "Vermelho",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 10,
+          "valor": "Laranja",
+          "produtosAplicaveis": [
+            3
+          ]
+        },
+        {
+          "codigo": 11,
+          "valor": "Preto",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 12,
+          "valor": "Vermelho",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 13,
+          "valor": "Azul",
+          "produtosAplicaveis": [
+            4
+          ]
+        },
+        {
+          "codigo": 14,
+          "valor": "Branco",
+          "produtosAplicaveis": [
+            4
+          ]
         }
       ]
     },
@@ -1795,48 +3336,193 @@
       "familia": {
         "codigo": 4,
         "nome": "Opcionais"
-      }
+      },
+      "produtosAplicaveis": [
+        1,
+        2
+      ]
+    }
+  ],
+  "opcoesLayoutCaracteristica": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "tipoDado": {
+        "id": 6,
+        "nome": "Tabela"
+      },
+      "nome": "Caixa de combinação"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "tipoDado": {
+        "id": 6,
+        "nome": "Tabela"
+      },
+      "nome": "Botão de opção"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "tipoDado": {
+        "id": 6,
+        "nome": "Tabela"
+      },
+      "nome": "Lista horizontal"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "tipoDado": {
+        "id": 6,
+        "nome": "Tabela"
+      },
+      "nome": "Lista vertical"
     }
   ],
   "Cotacao": [
     {
+      "id": "soS9NjIy1Lc",
+      "nome": "Cotação",
       "icone": "mdi:home",
-      "entidades": [
+      "tipo": "cotacao",
+      "filhos": [
         {
-          "id": 1,
-          "nome": "Nova entidade",
-          "icone": "mdi:settings",
-          "produtos": [
+          "id": "proj-1",
+          "nome": "Novo Projeto",
+          "icone": "mdi:cog",
+          "tipo": "projeto",
+          "oculto": false,
+          "filhos": [
             {
-              "id": 1,
+              "id": "ent-1",
+              "nome": "Nova Entidade",
+              "icone": "mdi:bell",
+              "tipo": "entidade",
+              "oculto": false,
+              "filhos": [
+                {
+                  "id": "prod-1",
+                  "nome": "Meus produtos",
+                  "icone": "mdi:package-variant",
+                  "tipo": "produto",
+                  "oculto": true
+                },
+                {
+                  "id": "serv-1",
+                  "nome": "Meus serviços",
+                  "icone": "mdi:account",
+                  "tipo": "servico",
+                  "oculto": true
+                },
+                {
+                  "id": "ent-2",
+                  "nome": "Nova Entidade",
+                  "icone": "mdi:bell",
+                  "tipo": "entidade",
+                  "oculto": false,
+                  "filhos": [
+                    {
+                      "id": "bde4bfb8-7414-40f4-8696-1ea3785faff7",
+                      "nome": "Nova Entidade",
+                      "icone": "mdi:bell",
+                      "tipo": "entidade",
+                      "oculto": false,
+                      "filhos": [
+                        {
+                          "id": "b3e5251f-a2df-462e-bfe9-982028f96bb8",
+                          "nome": "Novo Produto",
+                          "icone": "mdi:package-variant",
+                          "tipo": "produto",
+                          "oculto": false
+                        },
+                        {
+                          "id": "a3dc0279-98bb-4bcb-a5d8-3ba9b8efbc6c",
+                          "nome": "Novo Produto",
+                          "icone": "mdi:package-variant",
+                          "tipo": "produto",
+                          "oculto": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "prod-2",
               "nome": "Meus produtos",
-              "icone": "mdi:bell"
-            }
-          ],
-          "servicos": [
+              "icone": "mdi:package-variant",
+              "tipo": "produto",
+              "oculto": false
+            },
             {
-              "id": 1,
+              "id": "serv-2",
               "nome": "Meus serviços",
-              "icone": "mdi:account"
+              "icone": "mdi:account",
+              "tipo": "servico",
+              "oculto": false
             }
           ]
-        }
-      ],
-      "produtos": [
+        },
         {
-          "id": 1,
+          "id": "prod-3",
           "nome": "Meus produtos",
-          "icone": "mdi:bell"
-        }
-      ],
-      "servicos": [
+          "icone": "mdi:package-variant",
+          "tipo": "produto",
+          "oculto": false
+        },
         {
-          "id": 1,
+          "id": "serv-3",
           "nome": "Meus serviços",
-          "icone": "mdi:account"
+          "icone": "mdi:account",
+          "tipo": "servico",
+          "oculto": false
         }
-      ],
-      "id": "soS9NjIy1Lc"
+      ]
+    }
+  ],
+  "statusCotacao": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Prospecção"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Estudo"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Contato"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Negociação"
+    },
+    {
+      "id": "5",
+      "codigo": 5,
+      "nome": "Fechamento"
+    },
+    {
+      "id": "6",
+      "codigo": 6,
+      "nome": "Perdido"
+    },
+    {
+      "id": "7",
+      "codigo": 7,
+      "nome": "Cancelado"
+    },
+    {
+      "id": "8",
+      "codigo": 8,
+      "nome": "Contratado"
     }
   ],
   "AtributosCotacaoFamilia": [
@@ -1897,5 +3583,218 @@
       "id": "98KeiZYZuuI"
     }
   ],
+  "Moedas": [
+    {
+      "id": "1",
+      "codigo": 986,
+      "codigoIBAN": "BRL",
+      "nome": "Real",
+      "simbolo": "R$"
+    },
+    {
+      "id": "2",
+      "codigo": 840,
+      "codigoIBAN": "USD",
+      "nome": "Dólar Americano",
+      "simbolo": "$"
+    },
+    {
+      "id": "6",
+      "codigo": 978,
+      "codigoIBAN": "EUR",
+      "nome": "Euro",
+      "simbolo": "€"
+    }
+  ],
+  "TiposDado": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Texto"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Número inteiro"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Sim/Não"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Número decimal"
+    },
+    {
+      "id": "5",
+      "codigo": 5,
+      "nome": "Data"
+    },
+    {
+      "id": "6",
+      "codigo": 6,
+      "nome": "Tabela"
+    },
+    {
+      "id": "7",
+      "codigo": 7,
+      "nome": "Collection"
+    }
+  ],
+  "unidadesMedida": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Unidade"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "m"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "m²"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "m³"
+    }
+  ],
+  "ClassificacaoFiscalItemCotacao": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Material"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Serviço"
+    }
+  ],
+  "ClassificacaoComercialItemCotacao": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "classificacaoFiscal": {
+        "id": 1,
+        "nome": "Material"
+      },
+      "nome": "Venda de Produto"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "classificacaoFiscal": {
+        "id": 2,
+        "nome": "Serviço"
+      },
+      "nome": "Venda de Serviço"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "classificacaoFiscal": {
+        "id": 2,
+        "nome": "Serviço"
+      },
+      "nome": "Locação"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "classificacaoFiscal": {
+        "id": 2,
+        "nome": "Serviço"
+      },
+      "nome": "Assinatura"
+    }
+  ],
+  "MeiosPagamento": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Transferência bancária"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Boleto bancário"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Cartão de crédito"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Moeda em espécie"
+    },
+    {
+      "id": "5",
+      "codigo": 5,
+      "nome": "Moeda digital"
+    }
+  ],
+  "vinculosPagamento": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Aceitação da proposta"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Assinatura do contrato"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Entrega do projeto"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Aprovação do projeto"
+    },
+    {
+      "id": "5",
+      "codigo": 5,
+      "nome": "Entrega do material"
+    },
+    {
+      "id": "6",
+      "codigo": 6,
+      "nome": "Conclusão do serviço"
+    }
+  ],
+  "segmentosMercado":[
+      {
+         "id":1,
+         "codigo":1,
+         "nome":"Carros novos para concessionária"
+      },
+      {
+         "id":2,
+         "codigo":2,
+         "nome":"Importação para cliente"
+      },
+      {
+         "id":3,
+         "codigo":3,
+         "nome":"Aluguel de frota corporativa"
+      },
+      {
+         "id":4,
+         "codigo":4,
+         "nome":"Serviços"
+      }
+   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
