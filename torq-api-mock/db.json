@@ -1166,6 +1166,36 @@
           "id": "4",
           "coluna": 10,
           "valor": "Material;Cor;Acabamento;Quantidade de módulos;Ferragens"
+        },
+        {
+          "id": 5,
+          "coluna": 1,
+          "valor": "5"
+        },
+        {
+          "id": 5,
+          "coluna": 2,
+          "valor": "Lavagem de Carro"
+        },
+        {
+          "id": 5,
+          "coluna": 3,
+          "valor": "lavagem de carros"
+        },
+        {
+          "id": 5,
+          "coluna": 10,
+          "valor": "valor da lavagem"
+        },
+        {
+          "id": 5,
+          "coluna": 4,
+          "valor": "LAV-223"
+        },
+        {
+          "id": 5,
+          "coluna": 5,
+          "valor": "Manutenção"
         }
       ]
     },
@@ -1471,6 +1501,118 @@
       ]
     },
     {
+      "id": "pacotes",
+      "nome": "pacotes",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "itens",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": [
+        {
+          "id": 1,
+          "coluna": 2,
+          "valor": "Pacote de Lavagem"
+        },
+        {
+          "id": 1,
+          "coluna": 4,
+          "valor": "[{\"id\":5,\"nome\":\"Lavagem de Carro\",\"tipo\":\"servicoConfiguravel\",\"tipoLabel\":\"Serviços configuráveis\",\"possibilidade\":true},{\"id\":0,\"nome\":\"Lustra-Carros\",\"tipo\":\"produtoCatalogo\",\"tipoLabel\":\"Produtos de catálogo\",\"possibilidade\":true}]"
+        },
+        {
+          "id": 1,
+          "coluna": 3,
+          "valor": ""
+        },
+        {
+          "id": 2,
+          "coluna": 2,
+          "valor": "Frota Agrícola com Seguro"
+        },
+        {
+          "id": 2,
+          "coluna": 3,
+          "valor": "kit completo de veícolos agricolas para durar gerações"
+        },
+        {
+          "id": 2,
+          "coluna": 4,
+          "valor": "[{\"id\":2,\"nome\":\"Entrega a domicilio\",\"tipo\":\"servicoCatalogo\",\"tipoLabel\":\"Serviços de catálogo\",\"possibilidade\":true},{\"id\":1,\"nome\":\"Seguro Completo\",\"tipo\":\"servicoCatalogo\",\"tipoLabel\":\"Serviços de catálogo\",\"possibilidade\":true},{\"id\":0,\"nome\":\"Chapas de Inox GT9\",\"tipo\":\"produtoCatalogo\",\"tipoLabel\":\"Produtos de catálogo\",\"possibilidade\":true},{\"id\":3,\"nome\":\"Trator\",\"tipo\":\"produtoConfiguravel\",\"tipoLabel\":\"Produtos configuráveis\",\"possibilidade\":true}]"
+        }
+      ]
+    },
+    {
+      "id": "locacoes",
+      "nome": "locacoes",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": []
+    },
+    {
+      "id": "assinaturas",
+      "nome": "assinaturas",
+      "colunas": [
+        {
+          "id": 1,
+          "nome": "id",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "nome",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "descricao",
+          "tipoDado": "2",
+          "atributoSistemico": true
+        }
+      ],
+      "registros": []
+    },
+    {
       "id": "4",
       "nome": "favoritos",
       "colunas": [
@@ -1662,6 +1804,41 @@
           "id": "hgR5bF7F5hs",
           "coluna": 7,
           "valor": "10"
+        },
+        {
+          "id": null,
+          "coluna": 2,
+          "valor": "Oleo de motor"
+        },
+        {
+          "id": null,
+          "coluna": 3,
+          "valor": "1312313"
+        },
+        {
+          "id": null,
+          "coluna": 5,
+          "valor": "litros"
+        },
+        {
+          "id": null,
+          "coluna": 2,
+          "valor": "Lustra-Carros"
+        },
+        {
+          "id": null,
+          "coluna": 3,
+          "valor": "3242434"
+        },
+        {
+          "id": null,
+          "coluna": 4,
+          "valor": "produto brilhoso para carros limpos"
+        },
+        {
+          "id": null,
+          "coluna": 5,
+          "valor": "ml"
         }
       ]
     },
@@ -3381,12 +3558,487 @@
       "nome": "Lista vertical"
     }
   ],
-  "Cotacao": [
+  "TipoItemCotacao": [
     {
       "id": "soS9NjIy1Lc",
-      "nome": "Cotação",
-      "icone": "mdi:home",
-      "tipo": "cotacao",
+      "nome": "Template Cotação",
+      "template": true,
+      "segmentoMercadoId": null,
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "proj-1",
+          "nome": "Novo Projeto",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                },
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Cotação - Carros novos para concessionária",
+      "template": false,
+      "segmentoMercadoId": "1",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "e3c29559-c958-450e-a377-054917208301",
+          "nome": "Projet",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "a102c8ad-d439-4638-8319-89731cdfc34a",
+              "nome": "Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                }
+              ]
+            },
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "FNg1mEmIOSo"
+    },
+    {
+      "nome": "Cotação - Importação para cliente",
+      "template": false,
+      "segmentoMercadoId": "2",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
       "filhos": [
         {
           "id": "proj-1",
@@ -3394,93 +4046,974 @@
           "icone": "mdi:cog",
           "tipo": "projeto",
           "oculto": false,
+          "filhos": []
+        },
+        {
+          "id": "e3c29559-c958-450e-a377-054917208301",
+          "nome": "Projeto migrado",
+          "tipo": "projeto",
           "filhos": [
             {
-              "id": "ent-1",
-              "nome": "Nova Entidade",
-              "icone": "mdi:bell",
+              "id": "a102c8ad-d439-4638-8319-89731cdfc34a",
+              "nome": "Entidade migrada",
               "tipo": "entidade",
-              "oculto": false,
               "filhos": [
                 {
-                  "id": "prod-1",
-                  "nome": "Meus produtos",
-                  "icone": "mdi:package-variant",
-                  "tipo": "produto",
-                  "oculto": true
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
                 },
                 {
-                  "id": "serv-1",
-                  "nome": "Meus serviços",
-                  "icone": "mdi:account",
-                  "tipo": "servico",
-                  "oculto": true
-                },
-                {
-                  "id": "ent-2",
-                  "nome": "Nova Entidade",
-                  "icone": "mdi:bell",
-                  "tipo": "entidade",
-                  "oculto": false,
-                  "filhos": [
-                    {
-                      "id": "bde4bfb8-7414-40f4-8696-1ea3785faff7",
-                      "nome": "Nova Entidade",
-                      "icone": "mdi:bell",
-                      "tipo": "entidade",
-                      "oculto": false,
-                      "filhos": [
-                        {
-                          "id": "b3e5251f-a2df-462e-bfe9-982028f96bb8",
-                          "nome": "Novo Produto",
-                          "icone": "mdi:package-variant",
-                          "tipo": "produto",
-                          "oculto": false
-                        },
-                        {
-                          "id": "a3dc0279-98bb-4bcb-a5d8-3ba9b8efbc6c",
-                          "nome": "Novo Produto",
-                          "icone": "mdi:package-variant",
-                          "tipo": "produto",
-                          "oculto": false
-                        }
-                      ]
-                    }
-                  ]
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
                 }
               ]
             },
             {
-              "id": "prod-2",
-              "nome": "Meus produtos",
-              "icone": "mdi:package-variant",
-              "tipo": "produto",
-              "oculto": false
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                }
+              ]
             },
             {
-              "id": "serv-2",
-              "nome": "Meus serviços",
-              "icone": "mdi:account",
-              "tipo": "servico",
-              "oculto": false
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
             }
           ]
-        },
-        {
-          "id": "prod-3",
-          "nome": "Meus produtos",
-          "icone": "mdi:package-variant",
-          "tipo": "produto",
-          "oculto": false
-        },
-        {
-          "id": "serv-3",
-          "nome": "Meus serviços",
-          "icone": "mdi:account",
-          "tipo": "servico",
-          "oculto": false
         }
-      ]
+      ],
+      "id": "uEYRVzABv6o"
+    },
+    {
+      "nome": "Cotação - Aluguel de frota corporativa",
+      "template": false,
+      "segmentoMercadoId": "3",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "proj-1",
+          "nome": "Novo Projeto",
+          "icone": "mdi:cog",
+          "tipo": "projeto",
+          "oculto": false,
+          "filhos": []
+        },
+        {
+          "id": "e3c29559-c958-450e-a377-054917208301",
+          "nome": "Projeto migrado",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "a102c8ad-d439-4638-8319-89731cdfc34a",
+              "nome": "Entidade migrada",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                }
+              ]
+            },
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "GBuPta5_Ho4"
+    },
+    {
+      "nome": "Cotação - Serviços",
+      "template": false,
+      "segmentoMercadoId": "4",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "e3c29559-c958-450e-a377-054917208301",
+          "nome": "Projeto",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "a102c8ad-d439-4638-8319-89731cdfc34a",
+              "nome": "Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "icone": "mdi:folder-tree",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "icone": "mdi:tag",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "BePCXqAvxjM"
+    },
+    {
+      "nome": "Cotação - Carros de Luxos",
+      "template": false,
+      "segmentoMercadoId": "BSYVpHNkATE",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "proj-1",
+          "nome": "Novo Projeto",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                },
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "k00vxi98Ylk"
+    },
+    {
+      "nome": "Cotação - bacon",
+      "template": false,
+      "segmentoMercadoId": "rBi2QN5egmo",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "proj-1",
+          "nome": "Novo Projeto",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "09ef5c90-b66a-47b9-9ad6-bf0d926551e4",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "aee2e7a5-0448-41fc-a70e-d8c72b0eb0e9",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "9be17b53-e604-45de-a730-e067d8a192be",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "c19ee41e-7386-4530-8753-bca564b0300a",
+                  "nome": "Produto Catálogo",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                },
+                {
+                  "id": "9140b12a-e124-4aec-8a03-fec2e40b60b9",
+                  "nome": "Pacote",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "3"
+                },
+                {
+                  "id": "63a3fc7e-2ddb-4dba-a8af-42d13eeb6194",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            },
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Nova Entidade",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "51832a00-ea94-447d-8fdf-520e35431ae6",
+                  "nome": "Serviço Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "c8b83eb6-08ef-42c2-9550-926d7ec92784",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "fIAhYQVrJVo"
+    },
+    {
+      "nome": "Cotação - Carros de Luxo",
+      "template": false,
+      "segmentoMercadoId": "ECUUAdLqn8I",
+      "atributos": [
+        {
+          "id": 1,
+          "nome": "Código",
+          "tipoDado": 2,
+          "sistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Descrição",
+          "tipoDado": 1,
+          "sistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Data criação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "Data alteração",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 5,
+          "nome": "Data cotação",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 6,
+          "nome": "Data previsão fechamento",
+          "tipoDado": 4,
+          "sistemico": true
+        },
+        {
+          "id": 7,
+          "nome": "Venda em garantia",
+          "tipoDado": 3,
+          "sistemico": false
+        }
+      ],
+      "tiposDisponiveis": [
+        {
+          "id": "1",
+          "codigo": 1,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Configurável"
+        },
+        {
+          "id": "2",
+          "codigo": 2,
+          "classificacaoFiscal": {
+            "id": 1,
+            "nome": "Material"
+          },
+          "nome": "Produto Catálogo"
+        },
+        {
+          "id": "3",
+          "codigo": 3,
+          "classificacaoFiscal": null,
+          "nome": "Pacote"
+        },
+        {
+          "id": "4",
+          "codigo": 4,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço Configurável"
+        },
+        {
+          "id": "5",
+          "codigo": 5,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Serviço de Catálogo"
+        },
+        {
+          "id": "6",
+          "codigo": 6,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Locação"
+        },
+        {
+          "id": "7",
+          "codigo": 7,
+          "classificacaoFiscal": {
+            "id": 2,
+            "nome": "Serviço"
+          },
+          "nome": "Assinatura"
+        }
+      ],
+      "filhos": [
+        {
+          "id": "proj-1",
+          "nome": "Projeto Luxuoso",
+          "tipo": "projeto",
+          "filhos": [
+            {
+              "id": "4056887f-68a8-4fc4-b527-ccc04b58636e",
+              "nome": "Entidade Veículo",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "1c38507e-0ae7-4e1f-b598-4ff085bfd43f",
+                  "nome": "Produto Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "1"
+                },
+                {
+                  "id": "a4b61411-4140-4010-8206-a2b3e9e3cdee",
+                  "nome": "Produto Catálogo",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "2"
+                }
+              ]
+            },
+            {
+              "id": "ca3fd287-089d-4cf7-ae03-e515c7a86b4a",
+              "nome": "Entidade Serviços",
+              "tipo": "entidade",
+              "filhos": [
+                {
+                  "id": "a0d36338-391d-40aa-a2f8-b90c4b005177",
+                  "nome": "Serviço Configurável",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "4"
+                },
+                {
+                  "id": "4ba0f403-ab45-4e58-aa3c-6a9fbcfb8527",
+                  "nome": "Serviço de Catálogo",
+                  "tipo": "item",
+                  "tipoItemCotacaoId": "5"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "ARfFcNLAxSA"
     }
   ],
   "statusCotacao": [
@@ -3523,64 +5056,6 @@
       "id": "8",
       "codigo": 8,
       "nome": "Contratado"
-    }
-  ],
-  "AtributosCotacaoFamilia": [
-    {
-      "nome": "Geral",
-      "id": "1",
-      "sistemico": true,
-      "atributos": [
-        {
-          "id": 1,
-          "nome": "Código",
-          "TipoDado": 2,
-          "sistemico": true
-        },
-        {
-          "id": 2,
-          "nome": "Descrição",
-          "TipoDado": 1,
-          "sistemico": true
-        },
-        {
-          "id": 3,
-          "nome": "Data",
-          "TipoDado": 4,
-          "sistemico": true
-        },
-        {
-          "id": 5,
-          "nome": "Venda em garantia",
-          "TipoDado": 2,
-          "sistemico": false
-        }
-      ]
-    },
-    {
-      "nome": "Impostos",
-      "sistemico": false,
-      "atributos": [
-        {
-          "id": 1,
-          "nome": "ICMS",
-          "TipoDado": 2,
-          "sistemico": false
-        },
-        {
-          "id": 2,
-          "nome": "IPTU",
-          "TipoDado": 2,
-          "sistemico": false
-        },
-        {
-          "id": 3,
-          "nome": "ISPS",
-          "TipoDado": 3,
-          "sistemico": false
-        }
-      ],
-      "id": "98KeiZYZuuI"
     }
   ],
   "Moedas": [
@@ -3635,34 +5110,418 @@
     {
       "id": "6",
       "codigo": 6,
-      "nome": "Tabela"
+      "nome": "Tabela do usuário"
     },
     {
       "id": "7",
       "codigo": 7,
+      "nome": "Tabela Sistêmica"
+    },
+    {
+      "id": "8",
+      "codigo": 8,
       "nome": "Collection"
     }
   ],
   "unidadesMedida": [
     {
       "id": "1",
-      "codigo": 1,
-      "nome": "Unidade"
+      "nome": "Unidade",
+      "sigla": "un",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
     },
     {
       "id": "2",
-      "codigo": 2,
-      "nome": "m"
+      "nome": "Peça",
+      "sigla": "pç",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
     },
     {
       "id": "3",
-      "codigo": 3,
-      "nome": "m²"
+      "nome": "Par",
+      "sigla": "par",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
     },
     {
       "id": "4",
-      "codigo": 4,
-      "nome": "m³"
+      "nome": "Dúzia",
+      "sigla": "dz",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "5",
+      "nome": "Cento",
+      "sigla": "cento",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "6",
+      "nome": "Milheiro",
+      "sigla": "mil",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "7",
+      "nome": "Caixa",
+      "sigla": "cx",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "8",
+      "nome": "Pacote",
+      "sigla": "pct",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "9",
+      "nome": "Conjunto",
+      "sigla": "cj",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "10",
+      "nome": "Kit",
+      "sigla": "kit",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "11",
+      "nome": "Rolo",
+      "sigla": "rl",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "12",
+      "nome": "Saco",
+      "sigla": "sc",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "13",
+      "nome": "Pallet",
+      "sigla": "plt",
+      "aplicacao": "Quantidade",
+      "sistema": "Comercial"
+    },
+    {
+      "id": "14",
+      "nome": "Segundo",
+      "sigla": "s",
+      "aplicacao": "Tempo",
+      "sistema": "SI"
+    },
+    {
+      "id": "15",
+      "nome": "Minuto",
+      "sigla": "min",
+      "aplicacao": "Tempo",
+      "sistema": "SI"
+    },
+    {
+      "id": "16",
+      "nome": "Hora",
+      "sigla": "h",
+      "aplicacao": "Tempo",
+      "sistema": "SI"
+    },
+    {
+      "id": "17",
+      "nome": "Dia",
+      "sigla": "d",
+      "aplicacao": "Tempo",
+      "sistema": "SI"
+    },
+    {
+      "id": "18",
+      "nome": "Semana",
+      "sigla": "sem",
+      "aplicacao": "Tempo",
+      "sistema": "Calendário"
+    },
+    {
+      "id": "19",
+      "nome": "Mês",
+      "sigla": "mês",
+      "aplicacao": "Tempo",
+      "sistema": "Calendário"
+    },
+    {
+      "id": "20",
+      "nome": "Ano",
+      "sigla": "ano",
+      "aplicacao": "Tempo",
+      "sistema": "Calendário"
+    },
+    {
+      "id": "21",
+      "nome": "Miligrama",
+      "sigla": "mg",
+      "aplicacao": "Massa",
+      "sistema": "SI"
+    },
+    {
+      "id": "22",
+      "nome": "Grama",
+      "sigla": "g",
+      "aplicacao": "Massa",
+      "sistema": "SI"
+    },
+    {
+      "id": "23",
+      "nome": "Quilograma",
+      "sigla": "kg",
+      "aplicacao": "Massa",
+      "sistema": "SI"
+    },
+    {
+      "id": "24",
+      "nome": "Tonelada",
+      "sigla": "t",
+      "aplicacao": "Massa",
+      "sistema": "SI"
+    },
+    {
+      "id": "25",
+      "nome": "Onça",
+      "sigla": "oz",
+      "aplicacao": "Massa",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "26",
+      "nome": "Libra",
+      "sigla": "lb",
+      "aplicacao": "Massa",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "27",
+      "nome": "Milímetro",
+      "sigla": "mm",
+      "aplicacao": "Comprimento",
+      "sistema": "SI"
+    },
+    {
+      "id": "28",
+      "nome": "Centímetro",
+      "sigla": "cm",
+      "aplicacao": "Comprimento",
+      "sistema": "SI"
+    },
+    {
+      "id": "29",
+      "nome": "Metro",
+      "sigla": "m",
+      "aplicacao": "Comprimento",
+      "sistema": "SI"
+    },
+    {
+      "id": "30",
+      "nome": "Quilômetro",
+      "sigla": "km",
+      "aplicacao": "Comprimento",
+      "sistema": "SI"
+    },
+    {
+      "id": "31",
+      "nome": "Polegada",
+      "sigla": "in",
+      "aplicacao": "Comprimento",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "32",
+      "nome": "Pé",
+      "sigla": "ft",
+      "aplicacao": "Comprimento",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "33",
+      "nome": "Jarda",
+      "sigla": "yd",
+      "aplicacao": "Comprimento",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "34",
+      "nome": "Milha",
+      "sigla": "mi",
+      "aplicacao": "Comprimento",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "35",
+      "nome": "Milímetro quadrado",
+      "sigla": "mm²",
+      "aplicacao": "Área",
+      "sistema": "SI"
+    },
+    {
+      "id": "36",
+      "nome": "Centímetro quadrado",
+      "sigla": "cm²",
+      "aplicacao": "Área",
+      "sistema": "SI"
+    },
+    {
+      "id": "37",
+      "nome": "Metro quadrado",
+      "sigla": "m²",
+      "aplicacao": "Área",
+      "sistema": "SI"
+    },
+    {
+      "id": "38",
+      "nome": "Quilômetro quadrado",
+      "sigla": "km²",
+      "aplicacao": "Área",
+      "sistema": "SI"
+    },
+    {
+      "id": "39",
+      "nome": "Hectare",
+      "sigla": "ha",
+      "aplicacao": "Área",
+      "sistema": "SI"
+    },
+    {
+      "id": "40",
+      "nome": "Polegada quadrada",
+      "sigla": "in²",
+      "aplicacao": "Área",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "41",
+      "nome": "Pé quadrado",
+      "sigla": "ft²",
+      "aplicacao": "Área",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "42",
+      "nome": "Mililitro",
+      "sigla": "mL",
+      "aplicacao": "Volume",
+      "sistema": "SI"
+    },
+    {
+      "id": "43",
+      "nome": "Centímetro cúbico",
+      "sigla": "cm³",
+      "aplicacao": "Volume",
+      "sistema": "SI"
+    },
+    {
+      "id": "44",
+      "nome": "Litro",
+      "sigla": "L",
+      "aplicacao": "Volume",
+      "sistema": "SI"
+    },
+    {
+      "id": "45",
+      "nome": "Metro cúbico",
+      "sigla": "m³",
+      "aplicacao": "Volume",
+      "sistema": "SI"
+    },
+    {
+      "id": "46",
+      "nome": "Polegada cúbica",
+      "sigla": "in³",
+      "aplicacao": "Volume",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "47",
+      "nome": "Pé cúbico",
+      "sigla": "ft³",
+      "aplicacao": "Volume",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "48",
+      "nome": "Galão",
+      "sigla": "gal",
+      "aplicacao": "Volume",
+      "sistema": "Imperial"
+    },
+    {
+      "id": "49",
+      "nome": "Byte",
+      "sigla": "B",
+      "aplicacao": "Dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "50",
+      "nome": "Quilobyte",
+      "sigla": "KB",
+      "aplicacao": "Dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "51",
+      "nome": "Megabyte",
+      "sigla": "MB",
+      "aplicacao": "Dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "52",
+      "nome": "Gigabyte",
+      "sigla": "GB",
+      "aplicacao": "Dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "53",
+      "nome": "Terabyte",
+      "sigla": "TB",
+      "aplicacao": "Dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "54",
+      "nome": "Bit por segundo",
+      "sigla": "bit/s",
+      "aplicacao": "Taxa de dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "55",
+      "nome": "Megabit por segundo",
+      "sigla": "Mbit/s",
+      "aplicacao": "Taxa de dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "56",
+      "nome": "Gigabit por segundo",
+      "sigla": "Gbit/s",
+      "aplicacao": "Taxa de dados",
+      "sistema": "Digital"
+    },
+    {
+      "id": "57",
+      "nome": "Percentual",
+      "sigla": "%",
+      "aplicacao": "Proporção",
+      "sistema": "Relativo"
     }
   ],
   "ClassificacaoFiscalItemCotacao": [
@@ -3675,44 +5534,6 @@
       "id": "2",
       "codigo": 2,
       "nome": "Serviço"
-    }
-  ],
-  "ClassificacaoComercialItemCotacao": [
-    {
-      "id": "1",
-      "codigo": 1,
-      "classificacaoFiscal": {
-        "id": 1,
-        "nome": "Material"
-      },
-      "nome": "Venda de Produto"
-    },
-    {
-      "id": "2",
-      "codigo": 2,
-      "classificacaoFiscal": {
-        "id": 2,
-        "nome": "Serviço"
-      },
-      "nome": "Venda de Serviço"
-    },
-    {
-      "id": "3",
-      "codigo": 3,
-      "classificacaoFiscal": {
-        "id": 2,
-        "nome": "Serviço"
-      },
-      "nome": "Locação"
-    },
-    {
-      "id": "4",
-      "codigo": 4,
-      "classificacaoFiscal": {
-        "id": 2,
-        "nome": "Serviço"
-      },
-      "nome": "Assinatura"
     }
   ],
   "MeiosPagamento": [
@@ -3774,27 +5595,63 @@
       "nome": "Conclusão do serviço"
     }
   ],
-  "segmentosMercado":[
-      {
-         "id":1,
-         "codigo":1,
-         "nome":"Carros novos para concessionária"
-      },
-      {
-         "id":2,
-         "codigo":2,
-         "nome":"Importação para cliente"
-      },
-      {
-         "id":3,
-         "codigo":3,
-         "nome":"Aluguel de frota corporativa"
-      },
-      {
-         "id":4,
-         "codigo":4,
-         "nome":"Serviços"
-      }
-   ],
+  "segmentosMercado": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Carros novos para concessionária",
+      "sigla": "CNC"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Importação para cliente",
+      "sigla": "IC"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Aluguel de frota corporativa",
+      "sigla": "AF"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Serviços",
+      "sigla": "SRV"
+    },
+    {
+      "codigo": 5,
+      "nome": "Carros de Luxo",
+      "sigla": "",
+      "id": "ECUUAdLqn8I"
+    }
+  ],
+  "filiais": [
+    {
+      "id": "1",
+      "codigo": 1,
+      "nome": "Sul",
+      "sigla": "AL"
+    },
+    {
+      "id": "2",
+      "codigo": 2,
+      "nome": "Sudeste",
+      "sigla": "AM"
+    },
+    {
+      "id": "3",
+      "codigo": 3,
+      "nome": "Centro-Oeste",
+      "sigla": "BA"
+    },
+    {
+      "id": "4",
+      "codigo": 4,
+      "nome": "Nordeste",
+      "sigla": "BT"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
