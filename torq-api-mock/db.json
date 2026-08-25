@@ -824,6 +824,26 @@
           "id": 6,
           "coluna": 4,
           "valor": "Criciuma"
+        },
+        {
+          "id": 7,
+          "coluna": 1,
+          "valor": "7"
+        },
+        {
+          "id": 7,
+          "coluna": 2,
+          "valor": "Centro de Eventos Horizonte S.A."
+        },
+        {
+          "id": 7,
+          "coluna": 3,
+          "valor": "98.765.432/0001-10"
+        },
+        {
+          "id": 7,
+          "coluna": 4,
+          "valor": "Jundiaí"
         }
       ]
     },
@@ -2089,6 +2109,26 @@
           "id": 6,
           "coluna": 5,
           "valor": "Sérgio possui muitos terrenos, recentemente comprou mais 1 carro (já possuia 2)"
+        },
+        {
+          "id": 7,
+          "coluna": 1,
+          "valor": "[7]"
+        },
+        {
+          "id": 7,
+          "coluna": 2,
+          "valor": "1531562.95"
+        },
+        {
+          "id": 7,
+          "coluna": 3,
+          "valor": "4"
+        },
+        {
+          "id": 7,
+          "coluna": 5,
+          "valor": "Implantação integrada de infraestrutura, elevadores e operação do centro de eventos."
         }
       ]
     },
@@ -5653,482 +5693,557 @@
       "sigla": "BT"
     }
   ],
-  "cotacaoExemplo": {
-    "id": 1,
-    "codigo": "COT-2026-000184",
-    "descricao": "Cotação para lançamento Captiva 2027",
-    "dataCriacao": "2026-07-30T15:25:00-03:00",
-    "dataAlteracao": "2026-07-30T18:03:00-03:00",
-    "dataCotacao": "2026-07-30",
-    "dataPrevisaoFechamento": "2026-08-30",
-    "status": {
-      "id": 4,
-      "nome": "Negociação"
+  "usuarios": [
+    {
+      "id": "USR-019",
+      "nome": "Mariana Costa",
+      "email": "mariana.costa@exemplo.com",
+      "papel": "VENDEDOR"
     },
-    "versao": 4,
-    "moeda": "BRL",
-    "empresaEmissora": {
-      "id": "EMP-001",
-      "razaoSocial": "CPQ Demonstração Ltda.",
-      "nomeFantasia": "CPQ Demonstração",
-      "cnpj": "12.345.678/0001-90"
+    {
+      "id": "USR-031",
+      "nome": "Lucas Ribeiro",
+      "email": "lucas.ribeiro@exemplo.com",
+      "papel": "VENDEDOR"
     },
-    "oportunidade": {
+    {
+      "id": "USR-044",
+      "nome": "Ana Oliveira",
+      "email": "ana.oliveira@exemplo.com",
+      "papel": "VENDEDOR"
+    },
+    {
+      "id": "USR-122",
+      "nome": "Carlos Mendes",
+      "email": "carlos.mendes@exemplo.com",
+      "papel": "USUARIO"
+    }
+  ],
+  "cotacoesExemplos": [
+    {
       "id": "1",
-      "nome": "Implantação do novo centro de eventos",
-      "origem": "INDICACAO",
-      "etapa": "PROPOSTA",
-      "percentualProbabilidade": 65.0,
-      "dataPrevistaFechamento": "2026-08-20",
-      "valorEstimado": 1350000.0
-    },
-    "responsaveis": {
-      "vendedor": {
-        "id": "USR-019",
-        "nome": "Mariana Costa",
-        "email": "mariana.costa@exemplo.com"
+      "oportunidadeId": 7,
+      "codigo": "COT-2026-000184",
+      "descricao": "Cotação para lançamento Captiva 2027",
+      "dataCriacao": "2026-07-30T15:25:00-03:00",
+      "dataAlteracao": "2026-07-30T18:03:00-03:00",
+      "dataCotacao": "2026-07-30",
+      "dataPrevisaoFechamento": "2026-08-30",
+      "status": {
+        "id": 4,
+        "nome": "Negociação"
       },
-      "usuarioCriador": {
-        "id": "USR-122",
-        "nome": "Carlos Mendes",
-        "email": "carlos.mendes@exemplo.com"
-      }
-    },
-    "partes": {
-      "emissor": {
-        "id": "PARTE-783",
-        "razaoSocial": "Centro de Eventos Horizonte S.A.",
-        "nomeFantasia": "Horizonte Eventos",
-        "cnpj": "98.765.432/0001-10"
+      "versao": 4,
+      "moeda": "BRL",
+      "oportunidade": {
+        "id": "7",
+        "nome": "Implantação do novo centro de eventos",
+        "origem": "INDICACAO",
+        "etapa": "PROPOSTA",
+        "percentualProbabilidade": 65,
+        "dataPrevistaFechamento": "2026-08-20",
+        "valorEstimado": 1350000
       },
-      "recebedor": {
-        "id": "PARTE-783",
-        "mesmoQueCliente": true,
-        "enderecoEntrega": {
-          "logradouro": "Rodovia Municipal",
-          "numero": "KM 12",
-          "cidade": "Jundiaí",
-          "estado": "SP",
-          "cep": "13200-000"
+      "responsaveis": {
+        "vendedor": {
+          "id": "USR-019",
+          "nome": "Mariana Costa",
+          "email": "mariana.costa@exemplo.com"
+        },
+        "usuarioCriador": {
+          "id": "USR-122",
+          "nome": "Carlos Mendes",
+          "email": "carlos.mendes@exemplo.com"
         }
       },
-      "pagador": {
-        "id": "PARTE-HOLDING",
-        "mesmoQueCliente": false,
-        "razaoSocial": "Grupo Horizonte Participações S.A.",
-        "cnpj": "11.222.333/0001-44"
-      }
-    },
-    "condicoesPagamento": {
-      "pagamentos": [
-        {
-          "sequencia": 1,
-          "percentual": 20.0,
-          "valor": 306312.59,
-          "moeda": "BRL",
-          "dataPrevista": "2026-10-29",
-          "meioPagamento": "Transferência bancária",
-          "vinculo": "Assinatura do contrato"
+      "partes": {
+        "emissor": {
+          "id": "PARTE-783",
+          "razaoSocial": "Centro de Eventos Horizonte S.A.",
+          "nomeFantasia": "Horizonte Eventos",
+          "cnpj": "98.765.432/0001-10"
         },
-        {
-          "sequencia": 2,
-          "percentual": 20.0,
-          "valor": 306312.59,
-          "moeda": "BRL",
-          "dataPrevista": "2026-10-29",
-          "meioPagamento": "Transferência bancária",
-          "vinculo": "Aprovação do projeto"
+        "recebedor": {
+          "id": "PARTE-783",
+          "mesmoQueCliente": true,
+          "enderecoEntrega": {
+            "logradouro": "Rodovia Municipal",
+            "numero": "KM 12",
+            "cidade": "Jundiaí",
+            "estado": "SP",
+            "cep": "13200-000"
+          }
         },
-        {
-          "sequencia": 3,
-          "percentual": 30.0,
-          "valor": 459468.89,
-          "moeda": "BRL",
-          "dataPrevista": "2026-10-29",
-          "meioPagamento": "Transferência bancária",
-          "vinculo": "Entrega do material"
-        },
-        {
-          "sequencia": 4,
-          "percentual": 20.0,
-          "valor": 306312.59,
-          "moeda": "BRL",
-          "dataPrevista": "2026-10-29",
-          "meioPagamento": "Transferência bancária",
-          "vinculo": "Conclusão dos serviços"
-        },
-        {
-          "sequencia": 5,
-          "descricao": "Aceite final",
-          "percentual": 10.0,
-          "valor": 153156.29,
-          "moeda": "BRL",
-          "dataPrevista": "2026-10-29",
-          "meioPagamento": "Transferência bancária"
+        "pagador": {
+          "id": "PARTE-HOLDING",
+          "mesmoQueCliente": false,
+          "razaoSocial": "Grupo Horizonte Participações S.A.",
+          "cnpj": "11.222.333/0001-44"
         }
-      ]
-    },
-    "projetos": [
-      {
-        "id": "SEC-001",
-        "tipoAgrupador": "PROJETO",
-        "nome": "Projeto principal",
-        "descricao": "Implantação integrada de infraestrutura e operação.",
-        "projeto": {
-          "tipoProjeto": "ENGENHARIA_E_IMPLANTACAO",
-          "modeloExecucao": "TURNKEY",
-          "dataInicio": "2026-09-15",
-          "dataFim": "2027-03-31",
-          "escopo": {
-            "incluidos": [
-              "Projeto executivo",
-              "Fornecimento dos equipamentos",
-              "Instalação",
-              "Comissionamento"
-            ],
-            "excluidos": [
-              "Obras civis não descritas",
-              "Licenças públicas"
-            ],
-            "premissas": [
-              "Acesso ao local em horário comercial"
+      },
+      "condicoesPagamento": {
+        "pagamentos": [
+          {
+            "sequencia": 1,
+            "percentual": 20,
+            "valor": 306312.59,
+            "moeda": "BRL",
+            "dataPrevista": "2026-10-29",
+            "meioPagamento": "Transferência bancária",
+            "vinculo": "Assinatura do contrato"
+          },
+          {
+            "sequencia": 2,
+            "percentual": 20,
+            "valor": 306312.59,
+            "moeda": "BRL",
+            "dataPrevista": "2026-10-29",
+            "meioPagamento": "Transferência bancária",
+            "vinculo": "Aprovação do projeto"
+          },
+          {
+            "sequencia": 3,
+            "percentual": 30,
+            "valor": 459468.89,
+            "moeda": "BRL",
+            "dataPrevista": "2026-10-29",
+            "meioPagamento": "Transferência bancária",
+            "vinculo": "Entrega do material"
+          },
+          {
+            "sequencia": 4,
+            "percentual": 20,
+            "valor": 306312.59,
+            "moeda": "BRL",
+            "dataPrevista": "2026-10-29",
+            "meioPagamento": "Transferência bancária",
+            "vinculo": "Conclusão dos serviços"
+          },
+          {
+            "sequencia": 5,
+            "descricao": "Aceite final",
+            "percentual": 10,
+            "valor": 153156.29,
+            "moeda": "BRL",
+            "dataPrevista": "2026-10-29",
+            "meioPagamento": "Transferência bancária"
+          }
+        ]
+      },
+      "projetos": [
+        {
+          "id": "SEC-001",
+          "tipoAgrupador": "PROJETO",
+          "nome": "Projeto principal",
+          "descricao": "Implantação integrada de infraestrutura e operação.",
+          "projeto": {
+            "tipoProjeto": "ENGENHARIA_E_IMPLANTACAO",
+            "modeloExecucao": "TURNKEY",
+            "dataInicio": "2026-09-15",
+            "dataFim": "2027-03-31",
+            "escopo": {
+              "incluidos": [
+                "Projeto executivo",
+                "Fornecimento dos equipamentos",
+                "Instalação",
+                "Comissionamento"
+              ],
+              "excluidos": [
+                "Obras civis não descritas",
+                "Licenças públicas"
+              ],
+              "premissas": [
+                "Acesso ao local em horário comercial"
+              ]
+            },
+            "marcos": [
+              {
+                "id": "MARCO-001",
+                "nome": "Aprovação do projeto executivo",
+                "dataPlanejada": "2026-10-20",
+                "geraCobranca": true
+              }
             ]
           },
-          "marcos": [
+          "itens": [
             {
-              "id": "MARCO-001",
-              "nome": "Aprovação do projeto executivo",
-              "dataPlanejada": "2026-10-20",
-              "geraCobranca": true
+              "id": "ITEM-001",
+              "numeroLinha": 10,
+              "naturezaItem": "PRODUTO",
+              "modalidadeComercial": "VENDA_PRODUTO",
+              "papelComercial": "PRODUTO_PRINCIPAL",
+              "descricao": "Elevador de passageiros configurável",
+              "quantidade": 2,
+              "unidadeMedida": "UN",
+              "estrategiaAtendimento": "MTO",
+              "configuracao": {
+                "tipo": "BASEADA_EM_REGRAS",
+                "atributos": [
+                  {
+                    "codigo": "CAPACIDADE_KG",
+                    "descricao": "Capacidade",
+                    "tipoDado": "DECIMAL",
+                    "valor": 1000,
+                    "unidade": "KG"
+                  },
+                  {
+                    "codigo": "VELOCIDADE_MS",
+                    "descricao": "Velocidade",
+                    "tipoDado": "DECIMAL",
+                    "valor": 1.5,
+                    "unidade": "M_S"
+                  },
+                  {
+                    "codigo": "NUMERO_PARADAS",
+                    "descricao": "Número de paradas",
+                    "tipoDado": "INTEIRO",
+                    "valor": 8
+                  }
+                ],
+                "bomResultante": {
+                  "id": "BOM-ELEV-8831",
+                  "componentes": [
+                    {
+                      "codigoMaterial": "MAQ-TRAC-450",
+                      "descricao": "Máquina de tração",
+                      "quantidadePorUnidade": 1,
+                      "visivelNaProposta": false
+                    }
+                  ]
+                }
+              },
+              "precificacao": {
+                "modelo": "BASEADA_EM_CONFIGURACAO",
+                "precoUnitarioBruto": 365000,
+                "percentualDesconto": 5,
+                "precoUnitarioLiquido": 346750,
+                "valorLiquido": 693500
+              },
+              "custo": {
+                "metodo": "BOM_E_ROTEIRO_CONFIGURADOS",
+                "custoUnitario": 295000,
+                "custoTotal": 590000
+              },
+              "tributacao": {
+                "naturezaFiscal": "PRODUTO",
+                "ncm": "84281000",
+                "tributosEstimados": [
+                  {
+                    "tipo": "ICMS",
+                    "aliquota": 18,
+                    "baseCalculo": 693500,
+                    "valor": 124830
+                  }
+                ]
+              },
+              "integracaoErp": {
+                "codigoMaterial": "ELEV-CONF-001",
+                "centro": "1000"
+              }
+            },
+            {
+              "id": "ITEM-002",
+              "numeroLinha": 20,
+              "idItemRelacionado": "ITEM-001",
+              "tipoRelacionamento": "SOBRESSALENTE_DE",
+              "naturezaItem": "PRODUTO",
+              "modalidadeComercial": "VENDA_PRODUTO",
+              "papelComercial": "PECA_SOBRESSALENTE",
+              "descricao": "Máquina de tração sobressalente",
+              "quantidade": 1,
+              "unidadeMedida": "UN",
+              "estrategiaAtendimento": "MTS_OU_MTO",
+              "precificacao": {
+                "modelo": "PRECO_PADRAO",
+                "precoUnitarioBruto": 52000,
+                "percentualDesconto": 3,
+                "precoUnitarioLiquido": 50440,
+                "valorLiquido": 50440
+              },
+              "custo": {
+                "metodo": "CUSTO_PADRAO",
+                "custoUnitario": 33000,
+                "custoTotal": 33000
+              },
+              "tributacao": {
+                "naturezaFiscal": "PRODUTO",
+                "ncm": "85015210"
+              }
+            },
+            {
+              "id": "ITEM-003",
+              "numeroLinha": 30,
+              "naturezaItem": "SERVICO",
+              "modalidadeComercial": "VENDA_SERVICO",
+              "papelComercial": "SERVICO_INSTALACAO",
+              "descricao": "Instalação e comissionamento dos elevadores",
+              "quantidade": 1,
+              "unidadeMedida": "SERVICO",
+              "estrategiaAtendimento": "SERVICO_SOB_ENCOMENDA",
+              "dimensionamento": {
+                "direcionadores": [
+                  {
+                    "codigo": "QUANTIDADE_ELEVADORES",
+                    "valor": 2
+                  },
+                  {
+                    "codigo": "PARADAS_POR_ELEVADOR",
+                    "valor": 8
+                  }
+                ],
+                "recursos": [
+                  {
+                    "tipoRecurso": "TECNICO_INSTALACAO",
+                    "quantidade": 640,
+                    "unidade": "HORA"
+                  }
+                ]
+              },
+              "precificacao": {
+                "modelo": "PRECO_FIXO_DIMENSIONADO",
+                "valorLiquido": 210000
+              },
+              "custo": {
+                "custoTotal": 165000
+              },
+              "tributacao": {
+                "naturezaFiscal": "SERVICO",
+                "codigoServicoMunicipal": "14.01",
+                "itemLc116": "14.01"
+              }
             }
           ]
         },
-        "itens": [
-          {
-            "id": "ITEM-001",
-            "numeroLinha": 10,
-            "naturezaItem": "PRODUTO",
-            "modalidadeComercial": "VENDA_PRODUTO",
-            "papelComercial": "PRODUTO_PRINCIPAL",
-            "descricao": "Elevador de passageiros configurável",
-            "quantidade": 2,
-            "unidadeMedida": "UN",
-            "estrategiaAtendimento": "MTO",
-            "configuracao": {
-              "tipo": "BASEADA_EM_REGRAS",
-              "atributos": [
-                {
-                  "codigo": "CAPACIDADE_KG",
-                  "descricao": "Capacidade",
-                  "tipoDado": "DECIMAL",
-                  "valor": 1000,
-                  "unidade": "KG"
-                },
-                {
-                  "codigo": "VELOCIDADE_MS",
-                  "descricao": "Velocidade",
-                  "tipoDado": "DECIMAL",
-                  "valor": 1.5,
-                  "unidade": "M_S"
-                },
-                {
-                  "codigo": "NUMERO_PARADAS",
-                  "descricao": "Número de paradas",
-                  "tipoDado": "INTEIRO",
-                  "valor": 8
-                }
-              ],
-              "bomResultante": {
-                "id": "BOM-ELEV-8831",
-                "componentes": [
-                  {
-                    "codigoMaterial": "MAQ-TRAC-450",
-                    "descricao": "Máquina de tração",
-                    "quantidadePorUnidade": 1,
-                    "visivelNaProposta": false
-                  }
-                ]
-              }
-            },
-            "precificacao": {
-              "modelo": "BASEADA_EM_CONFIGURACAO",
-              "precoUnitarioBruto": 365000.0,
-              "percentualDesconto": 5.0,
-              "precoUnitarioLiquido": 346750.0,
-              "valorLiquido": 693500.0
-            },
-            "custo": {
-              "metodo": "BOM_E_ROTEIRO_CONFIGURADOS",
-              "custoUnitario": 295000.0,
-              "custoTotal": 590000.0
-            },
-            "tributacao": {
-              "naturezaFiscal": "PRODUTO",
-              "ncm": "84281000",
-              "tributosEstimados": [
-                {
-                  "tipo": "ICMS",
-                  "aliquota": 18.0,
-                  "baseCalculo": 693500.0,
-                  "valor": 124830.0
-                }
-              ]
-            },
-            "integracaoErp": {
-              "codigoMaterial": "ELEV-CONF-001",
-              "centro": "1000"
-            }
+        {
+          "id": "SEC-002",
+          "tipoAgrupador": "PACOTE",
+          "nome": "Pacote de inauguração",
+          "pacote": {
+            "tipoPacote": "MISTO_PRODUTOS_SERVICOS",
+            "estrategiaPrecificacao": "SOMA_COMPONENTES_COM_DESCONTO"
           },
-          {
-            "id": "ITEM-002",
-            "numeroLinha": 20,
-            "idItemRelacionado": "ITEM-001",
-            "tipoRelacionamento": "SOBRESSALENTE_DE",
-            "naturezaItem": "PRODUTO",
-            "modalidadeComercial": "VENDA_PRODUTO",
-            "papelComercial": "PECA_SOBRESSALENTE",
-            "descricao": "Máquina de tração sobressalente",
-            "quantidade": 1,
-            "unidadeMedida": "UN",
-            "estrategiaAtendimento": "MTS_OU_MTO",
-            "precificacao": {
-              "modelo": "PRECO_PADRAO",
-              "precoUnitarioBruto": 52000.0,
-              "percentualDesconto": 3.0,
-              "precoUnitarioLiquido": 50440.0,
-              "valorLiquido": 50440.0
-            },
-            "custo": {
-              "metodo": "CUSTO_PADRAO",
-              "custoUnitario": 33000.0,
-              "custoTotal": 33000.0
-            },
-            "tributacao": {
-              "naturezaFiscal": "PRODUTO",
-              "ncm": "85015210"
-            }
-          },
-          {
-            "id": "ITEM-003",
-            "numeroLinha": 30,
-            "naturezaItem": "SERVICO",
-            "modalidadeComercial": "VENDA_SERVICO",
-            "papelComercial": "SERVICO_INSTALACAO",
-            "descricao": "Instalação e comissionamento dos elevadores",
-            "quantidade": 1,
-            "unidadeMedida": "SERVICO",
-            "estrategiaAtendimento": "SERVICO_SOB_ENCOMENDA",
-            "dimensionamento": {
-              "direcionadores": [
-                {
-                  "codigo": "QUANTIDADE_ELEVADORES",
-                  "valor": 2
-                },
-                {
-                  "codigo": "PARADAS_POR_ELEVADOR",
-                  "valor": 8
-                }
-              ],
-              "recursos": [
-                {
-                  "tipoRecurso": "TECNICO_INSTALACAO",
-                  "quantidade": 640,
-                  "unidade": "HORA"
-                }
-              ]
-            },
-            "precificacao": {
-              "modelo": "PRECO_FIXO_DIMENSIONADO",
-              "valorLiquido": 210000.0
-            },
-            "custo": {
-              "custoTotal": 165000.0
-            },
-            "tributacao": {
-              "naturezaFiscal": "SERVICO",
-              "codigoServicoMunicipal": "14.01",
-              "itemLc116": "14.01"
-            }
-          }
-        ]
-      },
-      {
-        "id": "SEC-002",
-        "tipoAgrupador": "PACOTE",
-        "nome": "Pacote de inauguração",
-        "pacote": {
-          "tipoPacote": "MISTO_PRODUTOS_SERVICOS",
-          "estrategiaPrecificacao": "SOMA_COMPONENTES_COM_DESCONTO"
-        },
-        "itens": [
-          {
-            "id": "ITEM-010",
-            "numeroLinha": 100,
-            "tipoRegistro": "AGRUPADOR",
-            "tipoAgrupador": "PACOTE",
-            "descricao": "Pacote de inauguração para 500 convidados",
-            "valorComercialApresentado": 175000.0,
-            "itensFilhos": [
-              "ITEM-011",
-              "ITEM-012",
-              "ITEM-013"
-            ]
-          },
-          {
-            "id": "ITEM-011",
-            "numeroLinha": 110,
-            "idItemPai": "ITEM-010",
-            "naturezaItem": "SERVICO",
-            "modalidadeComercial": "VENDA_SERVICO",
-            "papelComercial": "COMPONENTE_PACOTE",
-            "descricao": "Buffet premium para 500 convidados",
-            "quantidade": 500,
-            "unidadeMedida": "PESSOA",
-            "precificacao": {
-              "modelo": "POR_PESSOA",
-              "precoUnitarioLiquido": 210.0,
-              "valorLiquido": 105000.0,
-              "inclusoNoPrecoPai": true
-            },
-            "tributacao": {
-              "naturezaFiscal": "SERVICO"
-            }
-          },
-          {
-            "id": "ITEM-012",
-            "numeroLinha": 120,
-            "idItemPai": "ITEM-010",
-            "naturezaItem": "SERVICO",
-            "modalidadeComercial": "VENDA_SERVICO",
-            "papelComercial": "COMPONENTE_PACOTE",
-            "descricao": "Decoração temática configurável",
-            "quantidade": 1,
-            "unidadeMedida": "EVENTO",
-            "precificacao": {
-              "modelo": "PRECO_FIXO",
-              "valorLiquido": 45000.0,
-              "inclusoNoPrecoPai": true
-            },
-            "tributacao": {
-              "naturezaFiscal": "SERVICO"
-            }
-          },
-          {
-            "id": "ITEM-013",
-            "numeroLinha": 130,
-            "idItemPai": "ITEM-010",
-            "naturezaItem": "SERVICO",
-            "modalidadeComercial": "LOCACAO",
-            "papelComercial": "COMPONENTE_PACOTE",
-            "descricao": "Locação de kit audiovisual",
-            "quantidade": 1,
-            "unidadeMedida": "KIT",
-            "locacao": {
-              "dataHoraInicio": "2027-04-09T18:00:00-03:00",
-              "dataHoraFim": "2027-04-11T10:00:00-03:00",
-              "unidadeCobranca": "DIA",
-              "quantidadeCobravel": 2,
-              "statusReserva": "PROVISORIA",
-              "disponibilidade": {
-                "exigeVerificacao": true,
-                "disponivel": true,
-                "idConjuntoRecursos": "POOL-AV-SP",
-                "reservaExpiraEm": "2026-08-05T23:59:59-03:00"
-              }
-            },
-            "precificacao": {
-              "modelo": "POR_PERIODO",
-              "valorDiaria": 19000.0,
-              "valorLiquido": 38000.0,
-              "valorAlocadoNoPacote": 25000.0,
-              "inclusoNoPrecoPai": true
-            },
-            "tributacao": {
-              "naturezaFiscal": "SERVICO",
-              "tratamentoTributario": "LOCACAO"
-            }
-          }
-        ]
-      },
-      {
-        "id": "SEC-003",
-        "tipoAgrupador": "SECAO",
-        "nome": "Serviços recorrentes",
-        "itens": [
-          {
-            "id": "ITEM-020",
-            "numeroLinha": 200,
-            "naturezaItem": "SERVICO",
-            "modalidadeComercial": "ASSINATURA",
-            "papelComercial": "SERVICO_RECORRENTE",
-            "descricao": "Plano de manutenção Gold",
-            "quantidade": 2,
-            "unidadeMedida": "EQUIPAMENTO",
-            "assinatura": {
-              "dataInicio": "2027-04-01",
-              "dataFim": "2029-03-31",
-              "prazo": 24,
-              "unidadePrazo": "MES",
-              "frequenciaCobranca": "MENSAL",
-              "renovacaoAutomatica": true,
-              "prazoRenovacao": 12,
-              "unidadePrazoRenovacao": "MES",
-              "sla": {
-                "janelaAtendimento": "24X7",
-                "tempoRespostaHoras": 4,
-                "metaResolucaoHoras": 24
+          "itens": [
+            {
+              "id": "ITEM-011",
+              "numeroLinha": 110,
+              "idItemPai": "ITEM-010",
+              "naturezaItem": "SERVICO",
+              "modalidadeComercial": "VENDA_SERVICO",
+              "papelComercial": "COMPONENTE_PACOTE",
+              "descricao": "Buffet premium para 500 convidados",
+              "quantidade": 500,
+              "unidadeMedida": "PESSOA",
+              "precificacao": {
+                "modelo": "POR_PESSOA",
+                "precoUnitarioLiquido": 210,
+                "valorLiquido": 105000,
+                "inclusoNoPrecoPai": true
               },
-              "disponibilidadeRecursos": {
-                "exigeVerificacaoCapacidade": true,
-                "capacidadeReservada": true
+              "tributacao": {
+                "naturezaFiscal": "SERVICO"
               }
             },
-            "precificacao": {
-              "modelo": "RECORRENTE_POR_EQUIPAMENTO",
-              "precoRecorrenteUnitario": 2400.0,
-              "valorRecorrenteMensal": 4800.0,
-              "mesesContratados": 24,
-              "valorTotalContrato": 115200.0
+            {
+              "id": "ITEM-012",
+              "numeroLinha": 120,
+              "idItemPai": "ITEM-010",
+              "naturezaItem": "SERVICO",
+              "modalidadeComercial": "VENDA_SERVICO",
+              "papelComercial": "COMPONENTE_PACOTE",
+              "descricao": "Decoração temática configurável",
+              "quantidade": 1,
+              "unidadeMedida": "EVENTO",
+              "precificacao": {
+                "modelo": "PRECO_FIXO",
+                "valorLiquido": 45000,
+                "inclusoNoPrecoPai": true
+              },
+              "tributacao": {
+                "naturezaFiscal": "SERVICO"
+              }
             },
-            "tributacao": {
-              "naturezaFiscal": "SERVICO"
+            {
+              "id": "ITEM-013",
+              "numeroLinha": 130,
+              "idItemPai": "ITEM-010",
+              "naturezaItem": "SERVICO",
+              "modalidadeComercial": "LOCACAO",
+              "papelComercial": "COMPONENTE_PACOTE",
+              "descricao": "Locação de kit audiovisual",
+              "quantidade": 1,
+              "unidadeMedida": "KIT",
+              "locacao": {
+                "dataHoraInicio": "2027-04-09T18:00:00-03:00",
+                "dataHoraFim": "2027-04-11T10:00:00-03:00",
+                "unidadeCobranca": "DIA",
+                "quantidadeCobravel": 2,
+                "statusReserva": "PROVISORIA",
+                "disponibilidade": {
+                  "exigeVerificacao": true,
+                  "disponivel": true,
+                  "idConjuntoRecursos": "POOL-AV-SP",
+                  "reservaExpiraEm": "2026-08-05T23:59:59-03:00"
+                }
+              },
+              "precificacao": {
+                "modelo": "POR_PERIODO",
+                "valorDiaria": 19000,
+                "valorLiquido": 38000
+              },
+              "tributacao": {
+                "naturezaFiscal": "SERVICO",
+                "tratamentoTributario": "LOCACAO"
+              }
             }
-          }
+          ]
+        },
+        {
+          "id": "SEC-003",
+          "tipoAgrupador": "SECAO",
+          "nome": "Serviços recorrentes",
+          "itens": [
+            {
+              "id": "ITEM-020",
+              "numeroLinha": 200,
+              "naturezaItem": "SERVICO",
+              "modalidadeComercial": "ASSINATURA",
+              "papelComercial": "SERVICO_RECORRENTE",
+              "descricao": "Plano de manutenção Gold",
+              "quantidade": 2,
+              "unidadeMedida": "EQUIPAMENTO",
+              "assinatura": {
+                "dataInicio": "2027-04-01",
+                "dataFim": "2029-03-31",
+                "prazo": 24,
+                "unidadePrazo": "MES",
+                "frequenciaCobranca": "MENSAL",
+                "renovacaoAutomatica": true,
+                "prazoRenovacao": 12,
+                "unidadePrazoRenovacao": "MES",
+                "sla": {
+                  "janelaAtendimento": "24X7",
+                  "tempoRespostaHoras": 4,
+                  "metaResolucaoHoras": 24
+                },
+                "disponibilidadeRecursos": {
+                  "exigeVerificacaoCapacidade": true,
+                  "capacidadeReservada": true
+                }
+              },
+              "precificacao": {
+                "modelo": "RECORRENTE_POR_EQUIPAMENTO",
+                "precoRecorrenteUnitario": 2400,
+                "valorRecorrenteMensal": 4800,
+                "mesesContratados": 24,
+                "valorTotalContrato": 115200
+              },
+              "tributacao": {
+                "naturezaFiscal": "SERVICO"
+              }
+            }
+          ]
+        }
+      ],
+      "totais": {
+        "valorLiquidoProdutos": 743940,
+        "valorLiquidoServicos": 500040,
+        "valorAntesTributos": 1241180,
+        "valorTributosEstimados": 290382.95,
+        "valorTotal": 1531562.95,
+        "custoTotal": 987200,
+        "valorMargemBruta": 284600,
+        "percentualMargemBruta": 22.38
+      },
+      "documentoProposta": {
+        "idModelo": "MODELO-PROPOSTA-GENERICA-01",
+        "titulo": "Proposta Comercial — Centro de Eventos Horizonte",
+        "secoesDocumento": [
+          "CAPA",
+          "RESUMO_EXECUTIVO",
+          "DADOS_CLIENTE",
+          "ESCOPO",
+          "ITENS",
+          "DETALHES_CONFIGURACAO",
+          "CRONOGRAMA",
+          "CONDICOES_COMERCIAIS",
+          "CONDICOES_PAGAMENTO",
+          "PREMISSAS_EXCLUSOES",
+          "ASSINATURAS"
         ]
+      },
+      "exportacaoErp": {
+        "sistemaDestino": "SAP_S4HANA",
+        "status": "NAO_EXPORTADO",
+        "tributosDevemSerRecalculados": true
       }
-    ],
-    "totais": {
-      "valorLiquidoProdutos": 743940.0,
-      "valorLiquidoServicos": 500040.0,
-      "valorAntesTributos": 1241180.0,
-      "valorTributosEstimados": 290382.95,
-      "valorTotal": 1531562.95,
-      "custoTotal": 987200.0,
-      "valorMargemBruta": 284600.0,
-      "percentualMargemBruta": 22.38
     },
-    "documentoProposta": {
-      "idModelo": "MODELO-PROPOSTA-GENERICA-01",
-      "titulo": "Proposta Comercial — Centro de Eventos Horizonte",
-      "secoesDocumento": [
-        "CAPA",
-        "RESUMO_EXECUTIVO",
-        "DADOS_CLIENTE",
-        "ESCOPO",
-        "ITENS",
-        "DETALHES_CONFIGURACAO",
-        "CRONOGRAMA",
-        "CONDICOES_COMERCIAIS",
-        "CONDICOES_PAGAMENTO",
-        "PREMISSAS_EXCLUSOES",
-        "ASSINATURAS"
-      ]
-    },
-    "exportacaoErp": {
-      "sistemaDestino": "SAP_S4HANA",
-      "status": "NAO_EXPORTADO",
-      "tributosDevemSerRecalculados": true
+    {
+      "oportunidadeId": 4,
+      "codigo": "COT-2026-000004",
+      "descricao": "Cotação para João",
+      "dataCriacao": "2026-08-25T14:32:14.229Z",
+      "dataAlteracao": "2026-08-25T14:32:14.229Z",
+      "dataCotacao": "2026-08-25",
+      "dataPrevisaoFechamento": "",
+      "status": {
+        "id": "3",
+        "nome": "CONTATO"
+      },
+      "versao": 1,
+      "moeda": "BRL",
+      "oportunidade": {
+        "id": "4",
+        "nome": "João",
+        "origem": "",
+        "etapa": "CONTATO",
+        "percentualProbabilidade": 0,
+        "dataPrevistaFechamento": "",
+        "valorEstimado": 60000
+      },
+      "responsaveis": {
+        "vendedor": {
+          "id": "USR-019",
+          "nome": "Mariana Costa",
+          "email": "mariana.costa@exemplo.com"
+        },
+        "usuarioCriador": {
+          "id": "USR-122",
+          "nome": "Carlos Mendes",
+          "email": "carlos.mendes@exemplo.com"
+        }
+      },
+      "partes": {
+        "cliente": {
+          "id": "CLIENTE-OP-4",
+          "razaoSocial": "João"
+        }
+      },
+      "condicoesPagamento": {
+        "pagamentos": []
+      },
+      "projetos": [],
+      "totais": {
+        "valorLiquidoProdutos": 0,
+        "valorLiquidoServicos": 0,
+        "valorAntesTributos": 0,
+        "valorTributosEstimados": 0,
+        "valorTotal": 0,
+        "custoTotal": 0,
+        "valorMargemBruta": 0,
+        "percentualMargemBruta": 0
+      },
+      "documentoProposta": {
+        "idModelo": "",
+        "titulo": "",
+        "secoesDocumento": []
+      },
+      "exportacaoErp": {
+        "sistemaDestino": "",
+        "status": "NAO_EXPORTADO",
+        "tributosDevemSerRecalculados": true
+      },
+      "id": "L_dztnahoHs"
     }
-  },
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
