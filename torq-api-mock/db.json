@@ -316,6 +316,174 @@
           "atributoSistemico": "true"
         }
       ]
+    },
+    {
+      "id": "17",
+      "nome": "Disponibilização do bem",
+      "entidade": "locacao",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Valor da diária",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Quantidade de diárias",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Preparação e vistoria de saída"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "nome": "Período e logística",
+      "entidade": "locacao",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Data e hora de retirada",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Data e hora de devolução",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Entrega e recolhimento"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "nome": "Garantias e adicionais",
+      "entidade": "locacao",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Caução",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Seguro contra danos"
+        },
+        {
+          "id": 3,
+          "nome": "Hora ou diária excedente"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "nome": "Total da locação",
+      "entidade": "locacao",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Subtotal do período",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Impostos da locação",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Valor total da locação",
+          "atributoSistemico": true
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "nome": "Plano contratado",
+      "entidade": "assinatura",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Mensalidade base",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Quantidade de usuários ou unidades",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Recursos adicionais"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "nome": "Ciclo da assinatura",
+      "entidade": "assinatura",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Frequência de cobrança",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Vigência do contrato",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Renovação automática",
+          "atributoSistemico": true
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "nome": "Implantação e atendimento",
+      "entidade": "assinatura",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Taxa única de implantação"
+        },
+        {
+          "id": 2,
+          "nome": "Suporte incluso no plano"
+        },
+        {
+          "id": 3,
+          "nome": "Franquia de uso mensal"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "nome": "Total da assinatura",
+      "entidade": "assinatura",
+      "componentes": [
+        {
+          "id": 1,
+          "nome": "Valor recorrente por ciclo",
+          "atributoSistemico": true
+        },
+        {
+          "id": 2,
+          "nome": "Impostos sobre o serviço recorrente",
+          "atributoSistemico": true
+        },
+        {
+          "id": 3,
+          "nome": "Valor total no período contratado",
+          "atributoSistemico": true
+        }
+      ]
     }
   ],
   "estrutura": [
@@ -2284,6 +2452,12 @@
           "nome": "nome",
           "tipoDado": "2",
           "atributoSistemico": true
+        },
+        {
+          "id": 4,
+          "nome": "ruleDefinition",
+          "tipoDado": "2",
+          "atributoSistemico": true
         }
       ],
       "registros": [
@@ -2316,6 +2490,11 @@
           "id": "msGZrH0ug9w",
           "coluna": 1,
           "valor": "msGZrH0ug9w"
+        },
+        {
+          "id": "msGZrH0ug9w",
+          "coluna": 4,
+          "valor": "{\"schemaVersion\":1,\"diagram\":{\"nodes\":[{\"id\":\"4dd77b6a-54a0-499e-ba5d-f1987bc6caf0\",\"type\":\"start\",\"position\":{\"x\":420,\"y\":70},\"data\":{\"enabled\":true}},{\"id\":\"03cbbe31-383e-43f4-bef8-5fcb4a10db7f\",\"type\":\"condition\",\"position\":{\"x\":420,\"y\":380},\"data\":{\"attribute\":{\"code\":\"9\",\"name\":\"Diâmetro do disco de freio\"},\"operator\":\">\",\"operand\":{\"type\":\"fixed\",\"value\":\"9\"},\"enabled\":true}},{\"id\":\"89d109f7-e1b4-4c07-91fd-a18a5436d1b2\",\"type\":\"assignment\",\"position\":{\"x\":280,\"y\":535},\"data\":{\"attribute\":{\"code\":\"67\",\"name\":\"Profundidade Barra Axial 43\"},\"operand\":{\"type\":\"fixed\",\"value\":\"10\"},\"enabled\":true}},{\"id\":\"9bfa2fac-95e2-4acc-b73d-6e8bbe29a612\",\"type\":\"assignment\",\"position\":{\"x\":560,\"y\":535},\"data\":{\"attribute\":{\"code\":\"67\",\"name\":\"Profundidade Barra Axial 43\"},\"operand\":{\"type\":\"fixed\",\"value\":\"20\"},\"enabled\":true}},{\"id\":\"c816f66a-dda9-4889-9e81-a935532a0b42\",\"type\":\"end\",\"position\":{\"x\":280,\"y\":690},\"data\":{\"enabled\":true}},{\"id\":\"f92576b3-a688-40dc-af7b-b160a62cd060\",\"type\":\"end\",\"position\":{\"x\":560,\"y\":690},\"data\":{\"enabled\":true}},{\"id\":\"bf118bd9-0881-4534-ae96-33f76d9d5385\",\"type\":\"io\",\"position\":{\"x\":420,\"y\":225},\"data\":{\"direction\":\"input\",\"attribute\":{\"code\":\"9\",\"name\":\"Diâmetro do disco de freio\"},\"enabled\":true}}],\"edges\":[{\"id\":\"dc83aac7-3807-4db5-80e3-852b0683cd38\",\"source\":\"03cbbe31-383e-43f4-bef8-5fcb4a10db7f\",\"target\":\"89d109f7-e1b4-4c07-91fd-a18a5436d1b2\",\"sourceHandle\":\"yes\",\"label\":\"Sim\"},{\"id\":\"4b938950-387d-425a-8acb-87602ae873c9\",\"source\":\"03cbbe31-383e-43f4-bef8-5fcb4a10db7f\",\"target\":\"9bfa2fac-95e2-4acc-b73d-6e8bbe29a612\",\"sourceHandle\":\"no\",\"label\":\"Não\"},{\"id\":\"6b9c89c6-463a-4abf-b304-5783a1cf62d4\",\"source\":\"89d109f7-e1b4-4c07-91fd-a18a5436d1b2\",\"target\":\"c816f66a-dda9-4889-9e81-a935532a0b42\",\"sourceHandle\":\"default\"},{\"id\":\"3fe7fa33-c8e4-4cbc-b452-3c5f6c3de8b7\",\"source\":\"9bfa2fac-95e2-4acc-b73d-6e8bbe29a612\",\"target\":\"f92576b3-a688-40dc-af7b-b160a62cd060\",\"sourceHandle\":\"default\"},{\"id\":\"b388eaa4-9cd3-4c71-9026-21822872e1ac\",\"source\":\"bf118bd9-0881-4534-ae96-33f76d9d5385\",\"target\":\"03cbbe31-383e-43f4-bef8-5fcb4a10db7f\",\"sourceHandle\":\"default\"},{\"id\":\"2b4aa4b7-edb7-4c88-a212-f712f5ead2f5\",\"source\":\"4dd77b6a-54a0-499e-ba5d-f1987bc6caf0\",\"target\":\"bf118bd9-0881-4534-ae96-33f76d9d5385\",\"sourceHandle\":\"default\"}],\"viewport\":{\"x\":182.08670520231215,\"y\":-0.01734104046244056,\"zoom\":0.7716763005780347}}}"
         }
       ]
     },
