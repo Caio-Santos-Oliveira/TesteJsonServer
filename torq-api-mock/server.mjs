@@ -17,10 +17,10 @@ function setProxyCorsHeaders(request, response) {
   const origin = request.headers.origin
 
   response.setHeader('Access-Control-Allow-Origin', origin || '*')
-  response.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
+  response.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS')
   response.setHeader(
     'Access-Control-Allow-Headers',
-    'Authorization, Accept, Content-Type',
+    'Authorization, Accept, Content-Type, comentarioAuditoria, versaoEditor',
   )
   response.setHeader('Vary', 'Origin')
 }
@@ -31,7 +31,14 @@ function proxyEsalesRules(request, response) {
     requestUrl.pathname.slice(proxyPrefix.length) || '/'
   const forwardedHeaders = {}
 
-  for (const headerName of ['authorization', 'accept', 'content-type']) {
+  for (const headerName of [
+    'authorization',
+    'accept',
+    'content-type',
+    'content-length',
+    'comentarioauditoria',
+    'versaoeditor',
+  ]) {
     const headerValue = request.headers[headerName]
 
     if (headerValue) {
@@ -110,9 +117,9 @@ server.use((request, response, next) => {
     return
   }
 
-  if (request.method !== 'GET') {
+  if (!['GET', 'PUT'].includes(request.method)) {
     response.statusCode = 405
-    response.setHeader('Allow', 'GET, OPTIONS')
+    response.setHeader('Allow', 'GET, PUT, OPTIONS')
     response.setHeader('Content-Type', 'application/json;charset=UTF-8')
     response.end(JSON.stringify({ error: 'Método não permitido.' }))
     return
